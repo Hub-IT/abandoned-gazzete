@@ -76,7 +76,7 @@ class MuxCompiler
     }
 
     /**
-     * validate controller classes and controller methods before compiling to 
+     * validate Controllers classes and Controllers methods before compiling to
      * route cache.
      */
     public function validateRouteCallback($routes) 
@@ -87,12 +87,12 @@ class MuxCompiler
                 $class = $callback[0];
                 $method = $callback[1];
                 if ( ! class_exists($class, true) ) {
-                    throw new Exception("Controller {$class} does not exist.");
+                    throw new Exception("Controllers {$class} does not exist.");
                 }
-                // rebless a controller (extract this to common method)
+                // rebless a Controllers (extract this to common method)
                 $controller = new $class;
                 if ( ! method_exists($controller, $method) ) {
-                    throw new Exception("Method $method not found in controller $class.");
+                    throw new Exception("Method $method not found in Controllers $class.");
                 }
             }
         }

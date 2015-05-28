@@ -65,7 +65,7 @@ class ControllerAnnotationTest extends PHPUnit_Framework_TestCase
     public function testAnnotations()
     {
         if (defined('HHVM_VERSION')) {
-            echo "HHVM does not support Reflection to expand controller action methods";
+            echo "HHVM does not support Reflection to expand Controllers action methods";
             return;
         }
 
@@ -82,7 +82,7 @@ class ControllerAnnotationTest extends PHPUnit_Framework_TestCase
         $mux = new Pux\Mux;
 
         // works fine
-        // $submux = $controller->expand();
+        // $submux = $Controllers->expand();
         // $mux->mount('/product', $submux );
 
         // gc scan bug

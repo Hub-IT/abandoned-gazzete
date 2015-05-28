@@ -23,19 +23,19 @@ class Executor
         }
 
         // if the first argument is a class name string,
-        // then create the controller object.
+        // then create the Controllers object.
         if( is_string($cb[0]) ) {
             $cb[0] = $controller = $constructArgs ? $rc->newInstanceArgs($constructArgs) : $rc->newInstance();
         } else {
             $controller = $cb[0];
         }
 
-        // check controller action method
+        // check Controllers action method
         if( $controller && ! method_exists( $controller ,$cb[1]) ) {
-            throw new Exception('Controller exception');
+            throw new Exception('Controllers exception');
             /*
             throw new Exception('Method ' .
-                get_class($controller) . "->{$cb[1]} does not exist.", $route );
+                get_class($Controllers) . "->{$cb[1]} does not exist.", $route );
              */
         }
 
