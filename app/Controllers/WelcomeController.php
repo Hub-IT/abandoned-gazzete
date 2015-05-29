@@ -1,5 +1,5 @@
-<?php namespace App\Controllers;
-use app\Models\User;
+<?php namespace Gazzete\Controllers;
+use Gazzete\Models\Users\User;
 
 /**
  * Created by PhpStorm.
@@ -13,9 +13,9 @@ class WelcomeController extends BaseController
 
 	private $user;
 
-	function __construct()
+	public function __construct()
 	{
-		self::__construct();
+		parent::__construct();
 
 		$this->user = new User();
 	}

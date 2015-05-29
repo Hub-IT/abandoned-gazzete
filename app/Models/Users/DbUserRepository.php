@@ -1,12 +1,5 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Antony
- * Date: 5/28/2015
- * Time: 14:55
- */
+<?php namespace Gazzete\Models\Users;
 
-namespace app\Models\Users;
 
 
 class DbUserRepository implements UserRepository{

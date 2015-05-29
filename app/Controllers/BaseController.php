@@ -1,4 +1,4 @@
-<?php namespace App\Controllers;
+<?php namespace Gazzete\Controllers;
 /**
  * Created by PhpStorm.
  * User: Antony

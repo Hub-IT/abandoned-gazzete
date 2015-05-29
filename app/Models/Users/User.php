@@ -1,4 +1,5 @@
-<?php
+<?php namespace Gazzete\Models\Users;
+
 /**
  * Created by PhpStorm.
  * User: Antony
@@ -6,7 +7,6 @@
  * Time: 14:47
  */
 
-namespace app\Models;
 
 
 class User
