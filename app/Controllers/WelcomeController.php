@@ -22,7 +22,6 @@ class WelcomeController extends BaseController
 
 	public function antonyFunction()
 	{
-		// Render a template
 		echo $this->templates->render('welcome', ['name' => $this->user->getName()]);
 	}
 
