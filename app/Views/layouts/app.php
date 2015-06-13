@@ -5,17 +5,17 @@
 	<title>AdminLTE 2 | Dashboard</title>
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<!-- Bootstrap 3.3.4 -->
-	<link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../vendor/bower_components/admin-lte/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 	<!-- Font Awesome Icons -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
 	      type="text/css"/>
 	<!-- Ionicons -->
 	<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
 	<!-- Theme style -->
-	<link href="../vendor/admin-lte/css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../vendor/bower_components/admin-lte/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
 		 folder instead of downloading all of them to reduce the load. -->
-	<link href="vendor/admin-lte/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css"/>
+	<link href="../vendor/bower_components/admin-lte/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css"/>
 	<?php asset('vendor/admin-lte/css/skins/all-skins.min', 'stylshet2') ?>
 
 
@@ -37,7 +37,7 @@
 
 	<header class="main-header">
 		<!-- Logo -->
-		<a href="../../index2.html" class="logo">
+		<a href="../vendor/bower_components/admin-lte/index2.html" class="logo">
 			<!-- mini logo for sidebar mini 50x50 pixels -->
 			<span class="logo-mini"><b>A</b>LT</span>
 			<!-- logo for regular state and mobile devices -->
@@ -69,7 +69,7 @@
 									<li><!-- start message -->
 										<a href="#">
 											<div class="pull-left">
-												<img src="../../dist/img/user2-160x160.jpg" class="img-circle"
+												<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle"
 												     alt="User Image"/>
 											</div>
 											<h4>
@@ -143,13 +143,13 @@
 					<!-- User Account: style can be found in dropdown.less -->
 					<li class="dropdown user user-menu">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							<img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+							<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
 							<span class="hidden-xs">Alexander Pierce</span>
 						</a>
 						<ul class="dropdown-menu">
 							<!-- User image -->
 							<li class="user-header">
-								<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+								<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
 
 								<p>
 									Alexander Pierce - Web Developer
@@ -197,7 +197,7 @@
 			<!-- Sidebar user panel -->
 			<div class="user-panel">
 				<div class="pull-left image">
-					<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+					<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
 				</div>
 				<div class="pull-left info">
 					<p>Alexander Pierce</p>
@@ -225,8 +225,8 @@
 							class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-						<li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+						<li><a href="../vendor/bower_components/admin-lte/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+						<li><a href="../vendor/bower_components/admin-lte/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
@@ -236,7 +236,7 @@
 						<span class="label label-primary pull-right">4</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+						<li><a href="../vendor/bower_components/admin-lte/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
 						<li><a href="../layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
 						<li><a href="../layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
 						<li><a href="../layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a>
@@ -350,7 +350,7 @@
 						<li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
 					</ul>
 				</li>
-				<li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a>
+				<li><a href="../vendor/bower_components/admin-lte/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a>
 				</li>
 				<li class="header">LABELS</li>
 				<li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
@@ -615,17 +615,17 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.1.4 -->
-<script src="vendor/admin-lte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="../vendor/bower_components/admin-lte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.2 JS -->
-<script src="vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../vendor/bower_components/admin-lte/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- SlimScroll -->
-<script src="vendor/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../vendor/bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <!-- FastClick -->
-<script src="vendor/admin-lte/plugins/fastclick/fastclick.min.js"></script>
+<script src="../vendor/bower_components/admin-lte/plugins/fastclick/fastclick.min.js"></script>
 <!-- AdminLTE App -->
-<script src="vendor/admin-lte/js/app.min.js" type="text/javascript"></script>
+<script src="../vendor/bower_components/admin-lte/dist/js/app.min.js" type="text/javascript"></script>
 
 <!-- Demo -->
-<script src="vendor/admin-lte/js/demo.js" type="text/javascript"></script>
+<script src="../vendor/bower_components/admin-lte/dist/js/demo.js" type="text/javascript"></script>
 </body>
 </html>
