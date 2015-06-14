@@ -6,18 +6,18 @@
 	<!-- Tell the browser to be responsive to screen width -->
 	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
 	<!-- Bootstrap 3.3.4 -->
-	<link href="../vendor/bower_components/admin-lte/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 	<!-- Font Awesome Icons -->
-	<link href="../vendor/bower_components/admin-lte/https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<!-- Ionicons -->
-	<link href="../vendor/bower_components/admin-lte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
 	<!-- jvectormap -->
-	<link href="../vendor/bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
 	<!-- Theme style -->
-	<link href="../vendor/bower_components/admin-lte/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/dist/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
 	<!-- AdminLTE Skins. Choose a skin from the css/skins
 		 folder instead of downloading all of them to reduce the load. -->
-	<link href="../vendor/bower_components/admin-lte/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
+	<link href="bower_components/admin-lte/dist/css/skins/_all-skins.min.css" rel="stylesheet" type="text/css" />
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +32,7 @@
 	<header class="main-header">
 
 		<!-- Logo -->
-		<a href="../vendor/bower_components/admin-lte/index2.html" class="logo">
+		<a href="bower_components/admin-lte/index2.html" class="logo">
 			<!-- mini logo for sidebar mini 50x50 pixels -->
 			<span class="logo-mini"><b>A</b>LT</span>
 			<!-- logo for regular state and mobile devices -->
@@ -42,7 +42,7 @@
 		<!-- Header Navbar: style can be found in header.less -->
 		<nav class="navbar navbar-static-top" role="navigation">
 			<!-- Sidebar toggle button-->
-			<a href="../vendor/bower_components/admin-lte/#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+			<a href="bower_components/admin-lte/#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
 				<span class="sr-only">Toggle navigation</span>
 			</a>
 			<!-- Navbar Right Menu -->
@@ -50,7 +50,7 @@
 				<ul class="nav navbar-nav">
 					<!-- Messages: style can be found in dropdown.less-->
 					<li class="dropdown messages-menu">
-						<a href="../vendor/bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-envelope-o"></i>
 							<span class="label label-success">4</span>
 						</a>
@@ -60,9 +60,9 @@
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
 									<li><!-- start message -->
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<div class="pull-left">
-												<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+												<img src="bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
 											</div>
 											<h4>
 												Support Team
@@ -72,9 +72,9 @@
 										</a>
 									</li><!-- end message -->
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<div class="pull-left">
-												<img src="../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="bower_components/admin-lte/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4>
 												AdminLTE Design Team
@@ -84,9 +84,9 @@
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<div class="pull-left">
-												<img src="../vendor/bower_components/admin-lte/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="bower_components/admin-lte/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4>
 												Developers
@@ -96,9 +96,9 @@
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<div class="pull-left">
-												<img src="../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="bower_components/admin-lte/dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4>
 												Sales Department
@@ -108,9 +108,9 @@
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<div class="pull-left">
-												<img src="../vendor/bower_components/admin-lte/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+												<img src="bower_components/admin-lte/dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
 											</div>
 											<h4>
 												Reviewers
@@ -121,12 +121,12 @@
 									</li>
 								</ul>
 							</li>
-							<li class="footer"><a href="../vendor/bower_components/admin-lte/#">See All Messages</a></li>
+							<li class="footer"><a href="bower_components/admin-lte/#">See All Messages</a></li>
 						</ul>
 					</li>
 					<!-- Notifications: style can be found in dropdown.less -->
 					<li class="dropdown notifications-menu">
-						<a href="../vendor/bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-bell-o"></i>
 							<span class="label label-warning">10</span>
 						</a>
@@ -136,39 +136,39 @@
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<i class="fa fa-users text-aqua"></i> 5 new members joined today
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<i class="fa fa-users text-red"></i> 5 new members joined
 										</a>
 									</li>
 
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<i class="fa fa-shopping-cart text-green"></i> 25 sales made
 										</a>
 									</li>
 									<li>
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<i class="fa fa-user text-red"></i> You changed your username
 										</a>
 									</li>
 								</ul>
 							</li>
-							<li class="footer"><a href="../vendor/bower_components/admin-lte/#">View all</a></li>
+							<li class="footer"><a href="bower_components/admin-lte/#">View all</a></li>
 						</ul>
 					</li>
 					<!-- Tasks: style can be found in dropdown.less -->
 					<li class="dropdown tasks-menu">
-						<a href="../vendor/bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
+						<a href="bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="fa fa-flag-o"></i>
 							<span class="label label-danger">9</span>
 						</a>
@@ -178,7 +178,7 @@
 								<!-- inner menu: contains the actual data -->
 								<ul class="menu">
 									<li><!-- Task item -->
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<h3>
 												Design some buttons
 												<small class="pull-right">20%</small>
@@ -191,7 +191,7 @@
 										</a>
 									</li><!-- end task item -->
 									<li><!-- Task item -->
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<h3>
 												Create a nice theme
 												<small class="pull-right">40%</small>
@@ -204,7 +204,7 @@
 										</a>
 									</li><!-- end task item -->
 									<li><!-- Task item -->
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<h3>
 												Some task I need to do
 												<small class="pull-right">60%</small>
@@ -217,7 +217,7 @@
 										</a>
 									</li><!-- end task item -->
 									<li><!-- Task item -->
-										<a href="../vendor/bower_components/admin-lte/#">
+										<a href="bower_components/admin-lte/#">
 											<h3>
 												Make beautiful transitions
 												<small class="pull-right">80%</small>
@@ -232,20 +232,20 @@
 								</ul>
 							</li>
 							<li class="footer">
-								<a href="../vendor/bower_components/admin-lte/#">View all tasks</a>
+								<a href="bower_components/admin-lte/#">View all tasks</a>
 							</li>
 						</ul>
 					</li>
 					<!-- User Account: style can be found in dropdown.less -->
 					<li class="dropdown user user-menu">
-						<a href="../vendor/bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
-							<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
+						<a href="bower_components/admin-lte/#" class="dropdown-toggle" data-toggle="dropdown">
+							<img src="bower_components/admin-lte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
 							<span class="hidden-xs">Alexander Pierce</span>
 						</a>
 						<ul class="dropdown-menu">
 							<!-- User image -->
 							<li class="user-header">
-								<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+								<img src="bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 								<p>
 									Alexander Pierce - Web Developer
 									<small>Member since Nov. 2012</small>
@@ -254,29 +254,29 @@
 							<!-- Menu Body -->
 							<li class="user-body">
 								<div class="col-xs-4 text-center">
-									<a href="../vendor/bower_components/admin-lte/#">Followers</a>
+									<a href="bower_components/admin-lte/#">Followers</a>
 								</div>
 								<div class="col-xs-4 text-center">
-									<a href="../vendor/bower_components/admin-lte/#">Sales</a>
+									<a href="bower_components/admin-lte/#">Sales</a>
 								</div>
 								<div class="col-xs-4 text-center">
-									<a href="../vendor/bower_components/admin-lte/#">Friends</a>
+									<a href="bower_components/admin-lte/#">Friends</a>
 								</div>
 							</li>
 							<!-- Menu Footer-->
 							<li class="user-footer">
 								<div class="pull-left">
-									<a href="../vendor/bower_components/admin-lte/#" class="btn btn-default btn-flat">Profile</a>
+									<a href="bower_components/admin-lte/#" class="btn btn-default btn-flat">Profile</a>
 								</div>
 								<div class="pull-right">
-									<a href="../vendor/bower_components/admin-lte/#" class="btn btn-default btn-flat">Sign out</a>
+									<a href="bower_components/admin-lte/#" class="btn btn-default btn-flat">Sign out</a>
 								</div>
 							</li>
 						</ul>
 					</li>
 					<!-- Control Sidebar Toggle Button -->
 					<li>
-						<a href="../vendor/bower_components/admin-lte/#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+						<a href="bower_components/admin-lte/#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -290,12 +290,12 @@
 			<!-- Sidebar user panel -->
 			<div class="user-panel">
 				<div class="pull-left image">
-					<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+					<img src="bower_components/admin-lte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
 				</div>
 				<div class="pull-left info">
 					<p>Alexander Pierce</p>
 
-					<a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle text-success"></i> Online</a>
+					<a href="bower_components/admin-lte/#"><i class="fa fa-circle text-success"></i> Online</a>
 				</div>
 			</div>
 			<!-- search form -->
@@ -312,136 +312,136 @@
 			<ul class="sidebar-menu">
 				<li class="header">MAIN NAVIGATION</li>
 				<li class="active treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-						<li class="active"><a href="../vendor/bower_components/admin-lte/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+						<li><a href="bower_components/admin-lte/index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+						<li class="active"><a href="bower_components/admin-lte/index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-files-o"></i>
 						<span>Layout Options</span>
 						<span class="label label-primary pull-right">4</span>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+						<li><a href="bower_components/admin-lte/pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+						<li><a href="bower_components/admin-lte/pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
+						<li><a href="bower_components/admin-lte/pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
+						<li><a href="bower_components/admin-lte/pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="../vendor/bower_components/admin-lte/pages/widgets.html">
+					<a href="bower_components/admin-lte/pages/widgets.html">
 						<i class="fa fa-th"></i> <span>Widgets</span> <small class="label pull-right bg-green">new</small>
 					</a>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-pie-chart"></i>
 						<span>Charts</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+						<li><a href="bower_components/admin-lte/pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+						<li><a href="bower_components/admin-lte/pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+						<li><a href="bower_components/admin-lte/pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+						<li><a href="bower_components/admin-lte/pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-laptop"></i>
 						<span>UI Elements</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/general.html"><i class="fa fa-circle-o"></i> General</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/icons.html"><i class="fa fa-circle-o"></i> Icons</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/buttons.html"><i class="fa fa-circle-o"></i> Buttons</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/sliders.html"><i class="fa fa-circle-o"></i> Sliders</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/timeline.html"><i class="fa fa-circle-o"></i> Timeline</a></li>
+						<li><a href="bower_components/admin-lte/pages/UI/modals.html"><i class="fa fa-circle-o"></i> Modals</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-edit"></i> <span>Forms</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+						<li><a href="bower_components/admin-lte/pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
+						<li><a href="bower_components/admin-lte/pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+						<li><a href="bower_components/admin-lte/pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-table"></i> <span>Tables</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
+						<li><a href="bower_components/admin-lte/pages/tables/simple.html"><i class="fa fa-circle-o"></i> Simple tables</a></li>
+						<li><a href="bower_components/admin-lte/pages/tables/data.html"><i class="fa fa-circle-o"></i> Data tables</a></li>
 					</ul>
 				</li>
 				<li>
-					<a href="../vendor/bower_components/admin-lte/pages/calendar.html">
+					<a href="bower_components/admin-lte/pages/calendar.html">
 						<i class="fa fa-calendar"></i> <span>Calendar</span>
 						<small class="label pull-right bg-red">3</small>
 					</a>
 				</li>
 				<li>
-					<a href="../vendor/bower_components/admin-lte/pages/mailbox/mailbox.html">
+					<a href="bower_components/admin-lte/pages/mailbox/mailbox.html">
 						<i class="fa fa-envelope"></i> <span>Mailbox</span>
 						<small class="label pull-right bg-yellow">12</small>
 					</a>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-folder"></i> <span>Examples</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
-						<li><a href="../vendor/bower_components/admin-lte/pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/login.html"><i class="fa fa-circle-o"></i> Login</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/register.html"><i class="fa fa-circle-o"></i> Register</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/lockscreen.html"><i class="fa fa-circle-o"></i> Lockscreen</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/404.html"><i class="fa fa-circle-o"></i> 404 Error</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/500.html"><i class="fa fa-circle-o"></i> 500 Error</a></li>
+						<li><a href="bower_components/admin-lte/pages/examples/blank.html"><i class="fa fa-circle-o"></i> Blank Page</a></li>
 					</ul>
 				</li>
 				<li class="treeview">
-					<a href="../vendor/bower_components/admin-lte/#">
+					<a href="bower_components/admin-lte/#">
 						<i class="fa fa-share"></i> <span>Multilevel</span>
 						<i class="fa fa-angle-left pull-right"></i>
 					</a>
 					<ul class="treeview-menu">
-						<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One</a></li>
+						<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One</a></li>
 						<li>
-							<a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
+							<a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One <i class="fa fa-angle-left pull-right"></i></a>
 							<ul class="treeview-menu">
-								<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Two</a></li>
+								<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Two</a></li>
 								<li>
-									<a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
+									<a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Two <i class="fa fa-angle-left pull-right"></i></a>
 									<ul class="treeview-menu">
-										<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Three</a></li>
-										<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Three</a></li>
+										<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level Three</a></li>
 									</ul>
 								</li>
 							</ul>
 						</li>
-						<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One</a></li>
+						<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o"></i> Level One</a></li>
 					</ul>
 				</li>
-				<li><a href="../vendor/bower_components/admin-lte/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+				<li><a href="bower_components/admin-lte/documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
 				<li class="header">LABELS</li>
-				<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-				<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-				<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+				<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
+				<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
+				<li><a href="bower_components/admin-lte/#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
 			</ul>
 		</section>
 		<!-- /.sidebar -->
@@ -456,7 +456,7 @@
 				<small>Version 2.0</small>
 			</h1>
 			<ol class="breadcrumb">
-				<li><a href="../vendor/bower_components/admin-lte/#"><i class="fa fa-dashboard"></i> Home</a></li>
+				<li><a href="bower_components/admin-lte/#"><i class="fa fa-dashboard"></i> Home</a></li>
 				<li class="active">Dashboard</li>
 			</ol>
 		</section>
@@ -517,11 +517,11 @@
 								<div class="btn-group">
 									<button class="btn btn-box-tool dropdown-toggle" data-toggle="dropdown"><i class="fa fa-wrench"></i></button>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="../vendor/bower_components/admin-lte/#">Action</a></li>
-										<li><a href="../vendor/bower_components/admin-lte/#">Another action</a></li>
-										<li><a href="../vendor/bower_components/admin-lte/#">Something else here</a></li>
+										<li><a href="bower_components/admin-lte/#">Action</a></li>
+										<li><a href="bower_components/admin-lte/#">Another action</a></li>
+										<li><a href="bower_components/admin-lte/#">Something else here</a></li>
 										<li class="divider"></li>
-										<li><a href="../vendor/bower_components/admin-lte/#">Separated link</a></li>
+										<li><a href="bower_components/admin-lte/#">Separated link</a></li>
 									</ul>
 								</div>
 								<button class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
@@ -674,7 +674,7 @@
 												<span class='direct-chat-name pull-left'>Alexander Pierce</span>
 												<span class='direct-chat-timestamp pull-right'>23 Jan 2:00 pm</span>
 											</div><!-- /.direct-chat-info -->
-											<img class="direct-chat-img" src="../vendor/bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+											<img class="direct-chat-img" src="bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
 											<div class="direct-chat-text">
 												Is this template really for free? That's unbelievable!
 											</div><!-- /.direct-chat-text -->
@@ -686,7 +686,7 @@
 												<span class='direct-chat-name pull-right'>Sarah Bullock</span>
 												<span class='direct-chat-timestamp pull-left'>23 Jan 2:05 pm</span>
 											</div><!-- /.direct-chat-info -->
-											<img class="direct-chat-img" src="../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+											<img class="direct-chat-img" src="bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
 											<div class="direct-chat-text">
 												You better believe it!
 											</div><!-- /.direct-chat-text -->
@@ -698,7 +698,7 @@
 												<span class='direct-chat-name pull-left'>Alexander Pierce</span>
 												<span class='direct-chat-timestamp pull-right'>23 Jan 5:37 pm</span>
 											</div><!-- /.direct-chat-info -->
-											<img class="direct-chat-img" src="../vendor/bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+											<img class="direct-chat-img" src="bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
 											<div class="direct-chat-text">
 												Working with AdminLTE on a great new app! Wanna join?
 											</div><!-- /.direct-chat-text -->
@@ -710,7 +710,7 @@
 												<span class='direct-chat-name pull-right'>Sarah Bullock</span>
 												<span class='direct-chat-timestamp pull-left'>23 Jan 6:10 pm</span>
 											</div><!-- /.direct-chat-info -->
-											<img class="direct-chat-img" src="../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
+											<img class="direct-chat-img" src="bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="message user image" /><!-- /.direct-chat-img -->
 											<div class="direct-chat-text">
 												I would love to.
 											</div><!-- /.direct-chat-text -->
@@ -724,7 +724,7 @@
 										<ul class='contacts-list'>
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user1-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user1-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   Count Dracula
@@ -736,7 +736,7 @@
 											</li><!-- End Contact Item -->
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user7-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user7-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   Sarah Doe
@@ -748,7 +748,7 @@
 											</li><!-- End Contact Item -->
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user3-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   Nadia Jolie
@@ -760,7 +760,7 @@
 											</li><!-- End Contact Item -->
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user5-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user5-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   Nora S. Vans
@@ -772,7 +772,7 @@
 											</li><!-- End Contact Item -->
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user6-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user6-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   John K.
@@ -784,7 +784,7 @@
 											</li><!-- End Contact Item -->
 											<li>
 												<a href='#'>
-													<img class='contacts-list-img' src='../vendor/bower_components/admin-lte/dist/img/user8-128x128.jpg'/>
+													<img class='contacts-list-img' src='bower_components/admin-lte/dist/img/user8-128x128.jpg'/>
 													<div class='contacts-list-info'>
                                 <span class='contacts-list-name'>
                                   Kenneth M.
@@ -824,49 +824,49 @@
 								<div class="box-body no-padding">
 									<ul class="users-list clearfix">
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user1-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Alexander Pierce</a>
 											<span class="users-list-date">Today</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user8-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user8-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Norman</a>
 											<span class="users-list-date">Yesterday</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user7-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user7-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Jane</a>
 											<span class="users-list-date">12 Jan</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user6-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user6-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">John</a>
 											<span class="users-list-date">12 Jan</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user2-160x160.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user2-160x160.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Alexander</a>
 											<span class="users-list-date">13 Jan</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user5-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user5-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Sarah</a>
 											<span class="users-list-date">14 Jan</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user4-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user4-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Nora</a>
 											<span class="users-list-date">15 Jan</span>
 										</li>
 										<li>
-											<img src="../vendor/bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="User Image"/>
+											<img src="bower_components/admin-lte/dist/img/user3-128x128.jpg" alt="User Image"/>
 											<a class="users-list-name" href="#">Nadia</a>
 											<span class="users-list-date">15 Jan</span>
 										</li>
 									</ul><!-- /.users-list -->
 								</div><!-- /.box-body -->
 								<div class="box-footer text-center">
-									<a href="../vendor/bower_components/admin-lte/javascript::" class="uppercase">View All Users</a>
+									<a href="bower_components/admin-lte/javascript::" class="uppercase">View All Users</a>
 								</div><!-- /.box-footer -->
 							</div><!--/.box -->
 						</div><!-- /.col -->
@@ -894,43 +894,43 @@
 									</thead>
 									<tbody>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR9842</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR9842</a></td>
 										<td>Call of Duty IV</td>
 										<td><span class="label label-success">Shipped</span></td>
 										<td><div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR1848</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR1848</a></td>
 										<td>Samsung Smart TV</td>
 										<td><span class="label label-warning">Pending</span></td>
 										<td><div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
 										<td>iPhone 6 Plus</td>
 										<td><span class="label label-danger">Delivered</span></td>
 										<td><div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
 										<td>Samsung Smart TV</td>
 										<td><span class="label label-info">Processing</span></td>
 										<td><div class="sparkbar" data-color="#00c0ef" data-height="20">90,80,-90,70,-61,83,63</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR1848</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR1848</a></td>
 										<td>Samsung Smart TV</td>
 										<td><span class="label label-warning">Pending</span></td>
 										<td><div class="sparkbar" data-color="#f39c12" data-height="20">90,80,-90,70,61,-83,68</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR7429</a></td>
 										<td>iPhone 6 Plus</td>
 										<td><span class="label label-danger">Delivered</span></td>
 										<td><div class="sparkbar" data-color="#f56954" data-height="20">90,-80,90,70,-61,83,63</div></td>
 									</tr>
 									<tr>
-										<td><a href="../vendor/bower_components/admin-lte/pages/examples/invoice.html">OR9842</a></td>
+										<td><a href="bower_components/admin-lte/pages/examples/invoice.html">OR9842</a></td>
 										<td>Call of Duty IV</td>
 										<td><span class="label label-success">Shipped</span></td>
 										<td><div class="sparkbar" data-color="#00a65a" data-height="20">90,80,90,-70,61,-83,63</div></td>
@@ -940,8 +940,8 @@
 							</div><!-- /.table-responsive -->
 						</div><!-- /.box-body -->
 						<div class="box-footer clearfix">
-							<a href="../vendor/bower_components/admin-lte/#" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-							<a href="../vendor/bower_components/admin-lte/#" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
+							<a href="bower_components/admin-lte/#" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
+							<a href="bower_components/admin-lte/#" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
 						</div><!-- /.box-footer -->
 					</div><!-- /.box -->
 				</div><!-- /.col -->
@@ -1030,9 +1030,9 @@
 						</div><!-- /.box-body -->
 						<div class="box-footer no-padding">
 							<ul class="nav nav-pills nav-stacked">
-								<li><a href="../vendor/bower_components/admin-lte/#">United States of America <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
-								<li><a href="../vendor/bower_components/admin-lte/#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a></li>
-								<li><a href="../vendor/bower_components/admin-lte/#">China <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
+								<li><a href="bower_components/admin-lte/#">United States of America <span class="pull-right text-red"><i class="fa fa-angle-down"></i> 12%</span></a></li>
+								<li><a href="bower_components/admin-lte/#">India <span class="pull-right text-green"><i class="fa fa-angle-up"></i> 4%</span></a></li>
+								<li><a href="bower_components/admin-lte/#">China <span class="pull-right text-yellow"><i class="fa fa-angle-left"></i> 0%</span></a></li>
 							</ul>
 						</div><!-- /.footer -->
 					</div><!-- /.box -->
@@ -1050,10 +1050,10 @@
 							<ul class="products-list product-list-in-box">
 								<li class="item">
 									<div class="product-img">
-										<img src="../vendor/bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
+										<img src="bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
 									</div>
 									<div class="product-info">
-										<a href="../vendor/bower_components/admin-lte/#" class="product-title">Samsung TV <span class="label label-warning pull-right">$1800</span></a>
+										<a href="bower_components/admin-lte/#" class="product-title">Samsung TV <span class="label label-warning pull-right">$1800</span></a>
                         <span class="product-description">
                           Samsung 32" 1080p 60Hz LED Smart HDTV.
                         </span>
@@ -1061,10 +1061,10 @@
 								</li><!-- /.item -->
 								<li class="item">
 									<div class="product-img">
-										<img src="../vendor/bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
+										<img src="bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
 									</div>
 									<div class="product-info">
-										<a href="../vendor/bower_components/admin-lte/#" class="product-title">Bicycle <span class="label label-info pull-right">$700</span></a>
+										<a href="bower_components/admin-lte/#" class="product-title">Bicycle <span class="label label-info pull-right">$700</span></a>
                         <span class="product-description">
                           26" Mongoose Dolomite Men's 7-speed, Navy Blue.
                         </span>
@@ -1072,10 +1072,10 @@
 								</li><!-- /.item -->
 								<li class="item">
 									<div class="product-img">
-										<img src="../vendor/bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
+										<img src="bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
 									</div>
 									<div class="product-info">
-										<a href="../vendor/bower_components/admin-lte/#" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
+										<a href="bower_components/admin-lte/#" class="product-title">Xbox One <span class="label label-danger pull-right">$350</span></a>
                         <span class="product-description">
                           Xbox One Console Bundle with Halo Master Chief Collection.
                         </span>
@@ -1083,10 +1083,10 @@
 								</li><!-- /.item -->
 								<li class="item">
 									<div class="product-img">
-										<img src="../vendor/bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
+										<img src="bower_components/admin-lte/dist/img/default-50x50.gif" alt="Product Image"/>
 									</div>
 									<div class="product-info">
-										<a href="../vendor/bower_components/admin-lte/#" class="product-title">PlayStation 4 <span class="label label-success pull-right">$399</span></a>
+										<a href="bower_components/admin-lte/#" class="product-title">PlayStation 4 <span class="label label-success pull-right">$399</span></a>
                         <span class="product-description">
                           PlayStation 4 500GB Console (PS4)
                         </span>
@@ -1095,7 +1095,7 @@
 							</ul>
 						</div><!-- /.box-body -->
 						<div class="box-footer text-center">
-							<a href="../vendor/bower_components/admin-lte/#" class="uppercase">View All Products</a>
+							<a href="bower_components/admin-lte/#" class="uppercase">View All Products</a>
 						</div><!-- /.box-footer -->
 					</div><!-- /.box -->
 				</div><!-- /.col -->
@@ -1107,15 +1107,15 @@
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 2.0
 		</div>
-		<strong>Copyright &copy; 2014-2015 <a href="../vendor/bower_components/admin-lte/http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+		<strong>Copyright &copy; 2014-2015 <a href="bower_components/admin-lte/http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
 	</footer>
 
 	<!-- Control Sidebar -->
 	<aside class="control-sidebar control-sidebar-dark">
 		<!-- Create the tabs -->
 		<ul class="nav nav-tabs nav-justified control-sidebar-tabs">
-			<li><a href="../vendor/bower_components/admin-lte/#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
-			<li><a href="../vendor/bower_components/admin-lte/#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+			<li><a href="bower_components/admin-lte/#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+			<li><a href="bower_components/admin-lte/#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
 		</ul>
 		<!-- Tab panes -->
 		<div class="tab-content">
@@ -1264,7 +1264,7 @@
 					<div class="form-group">
 						<label class="control-sidebar-subheading">
 							Delete chat history
-							<a href="../vendor/bower_components/admin-lte/#" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+							<a href="bower_components/admin-lte/#" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
 						</label>
 					</div><!-- /.form-group -->
 				</form>
@@ -1278,27 +1278,27 @@
 </div><!-- ./wrapper -->
 
 <!-- jQuery 2.1.4 -->
-<script src="../vendor/bower_components/admin-lte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="bower_components/admin-lte/plugins/jQuery/jQuery-2.1.4.min.js"></script>
 <!-- Bootstrap 3.3.2 JS -->
-<script src="../vendor/bower_components/admin-lte/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- FastClick -->
-<script src='../vendor/bower_components/admin-lte/plugins/fastclick/fastclick.min.js'></script>
+<script src='bower_components/admin-lte/plugins/fastclick/fastclick.min.js'></script>
 <!-- AdminLTE App -->
-<script src="../vendor/bower_components/admin-lte/dist/js/app.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/dist/js/app.min.js" type="text/javascript"></script>
 <!-- Sparkline -->
-<script src="../vendor/bower_components/admin-lte/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
 <!-- jvectormap -->
-<script src="../vendor/bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
-<script src="../vendor/bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/plugins/jvectormap/jquery-jvectormap-world-mill-en.js" type="text/javascript"></script>
 <!-- SlimScroll 1.3.0 -->
-<script src="../vendor/bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/plugins/slimScroll/jquery.slimscroll.min.js" type="text/javascript"></script>
 <!-- ChartJS 1.0.1 -->
-<script src="../vendor/bower_components/admin-lte/plugins/chartjs/Chart.min.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/plugins/chartjs/Chart.min.js" type="text/javascript"></script>
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="../vendor/bower_components/admin-lte/dist/js/pages/dashboard2.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/dist/js/pages/dashboard2.js" type="text/javascript"></script>
 
 <!-- AdminLTE for demo purposes -->
-<script src="../vendor/bower_components/admin-lte/dist/js/demo.js" type="text/javascript"></script>
+<script src="bower_components/admin-lte/dist/js/demo.js" type="text/javascript"></script>
 </body>
 </html>
