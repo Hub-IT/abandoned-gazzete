@@ -5,6 +5,7 @@ use Pux\Mux;
 
 $mux = new Mux;
 
+$mux->get("/admin", ['Gazzete\Controllers\WelcomeController', 'adminFunction']);
 $mux->get("/", ['Gazzete\Controllers\WelcomeController', 'antonyFunction']);
 
 //$mux->get('/login', ['App\Controllers\AuthController', 'loginFunction']);

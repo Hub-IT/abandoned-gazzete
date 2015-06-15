@@ -25,7 +25,15 @@ class WelcomeController extends BaseController
 		$title = 'Gazzete | Home';
 		$summary = 'summary';
 
-		echo $this->templates->render('welcome', compact('title', 'summary'));
+		echo $this->templates->render('main', ['name' => $this->user->getName(), 'title' => $title], compact('title', 'summary'));
+	}
+
+	public function adminFunction()
+	{
+		$title = 'Gazzete | Home';
+		$summary = 'summary';
+
+		echo $this->templates->render('welcome', ['name' => $this->user->getName(), 'title' => $title], compact('title', 'summary'));
 	}
 
 }
