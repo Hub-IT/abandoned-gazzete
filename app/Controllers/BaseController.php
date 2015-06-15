@@ -1,5 +1,6 @@
 <?php namespace Gazzete\Controllers;
 
+use Gazzete\Helpers\Html;
 use Twig_Environment;
 use Twig_Loader_Filesystem;
 
@@ -19,5 +20,7 @@ class BaseController {
 		$this->loader = new Twig_Loader_Filesystem(__DIR__ . '/../Views');
 
 		$this->twig = new Twig_Environment($this->loader);
+
+		$this->twig->addGlobal('html', new Html());
 	}
 }

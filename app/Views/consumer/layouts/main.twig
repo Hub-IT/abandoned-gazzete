@@ -8,15 +8,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/main.css">
+        {{ html.link("css/bootstrap.min.css") }}
+        {{ html.link("css/font-awesome.min.css") }}
+        {{ html.link("css/main.css") }}
 
         <!--[if lt IE 9]>
-        <script src="/js/vendor/html5shiv.min.js"></script>
+        {{ html.script("js/vendor/html5shiv.min.js") }}
         <![endif]-->
 
-        <script src="js/modernizr.custom.32229-2.8-respondjs-1-4-2.js"></script>
+        {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js") }}
     {% endblock head %}
 </head>
 
@@ -43,7 +43,8 @@
             </ul>
         </div>
 
-        <section class="sidebar col-md-5 col-sm-12" {% block hero %}style="background-image: url(img/default-sidebar.jpg" {% endblock hero %}>
+        <section class="sidebar col-md-5 col-sm-12"
+                 {% block hero %}style="background-image: url({{ html.url('img/default-sidebar.jpg') }} {% endblock hero %})">
 
                     <span class="menu-trigger animated fadeInDown">
                         <span class="bar"></span>
@@ -72,7 +73,9 @@
             <div class="site-info">
                 <div class="primary-info">
                     <h1>Writer</h1>
-                    <p>A minimal blogging theme to put your content on show. <a href="post.html">Look at the features.</a> </p>
+
+                    <p>A minimal blogging theme to put your content on show. <a href="post.html">Look at the
+                            features.</a></p>
 
                     <p>Content is king</p>
                 </div>
@@ -82,12 +85,13 @@
                     </p>
                 </div>
             </div>
-        </section><!-- end sidebar -->
+        </section>
+        <!-- end sidebar -->
 
         <section class="col-md-7 col-sm-12 col-md-offset-5 main-content">
 
             <div class="sub-nav">
-                <a href="#" class="select-posts active">Posts</a>
+                <a href="#" class="select-posts active">Articles</a>
                 <a href="#" class="select-categories">Categories</a>
             </div>
 
@@ -98,27 +102,32 @@
                 {% endblock content %}
 
 
-            <footer class="split-footer">
-                {% block footer %}
-                    <a href="post.html">About</a>
-                    <i class="link-spacer"></i>
-                    <a href="post.html">Writer 2015</a>
-                {% endblock footer %}
-            </footer>
+                <footer class="split-footer">
+                    {% block footer %}
+                        <a href="post.html">About</a>
+                        <i class="link-spacer"></i>
+                        <a href="post.html">Writer 2015</a>
+                    {% endblock footer %}
+                </footer>
 
-        </section><!-- main content -->
+            </div>
 
-    </div> <!--/row -->
+        </section>
+        <!-- main content -->
 
-</main> <!-- /container -->
+    </div>
+    <!--/row -->
+
+</main>
+<!-- /container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script>window.jQuery || {{ html.documentWriteScript("js/jquery.min.js") }}</script>
 
-<script src="js/jquery.jpanelmenu.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/fastclick.min.js"></script>
+{{ html.script("js/jquery.jpanelmenu.min.js") }}
+{{ html.script("js/bootstrap.min.js") }}
+{{ html.script("js/fastclick.min.js") }}
 
-<script src="js/main.js"></script>
+{{ html.script("js/main.js") }}
 </body>
 </html>

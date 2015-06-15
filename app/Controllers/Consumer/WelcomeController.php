@@ -1,4 +1,6 @@
 <?php namespace Gazzete\Controllers\Consumer;
+
+use Faker\Factory;
 use Gazzete\Controllers\BaseController;
 
 /**
@@ -15,11 +17,26 @@ class WelcomeController extends BaseController {
 
 	public function welcome()
 	{
-		$title = 'Gazzete | Home';
+		$faker = Factory::create();
 
-		$summary = 'summary';
 
-		$this->twig->display('consumer/welcome.twig');
+		foreach (range(3, 13) as $index)
+		{
+			$articles[] = ['link'     => $faker->url,
+			             'title'    => $faker->name,
+			             'summary'  => $faker->paragraph(),
+			             'duration' => $faker->numberBetween(1, 30) . ' min',
+			             'author'   => [
+				             'link'   => $faker->url,
+				             'name'   => $faker->name,
+				             'avatar' => $faker->imageUrl(),],
+			             'category' => [
+				             'link' => $faker->url,
+				             'name' => $faker->name]];
+		}
+
+
+		$this->twig->display('consumer/welcome.twig', compact('articles'));
 	}
 
 }

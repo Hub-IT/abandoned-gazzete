@@ -1,4 +1,4 @@
-<?php namespace Gazzete;
+<?php namespace Gazzete\Kernel;
 /**
  * Created by PhpStorm.
  * User: Antony
@@ -6,8 +6,7 @@
  * Time: 00:19
  */
 
-class App
-{
+class App {
 
 	public static function getBaseURL()
 	{

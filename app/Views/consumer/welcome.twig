@@ -1,4 +1,29 @@
 {% extends "consumer/layouts/main.twig" %}
 
-{% block title %}Index{% endblock %}
-{% block content %} Bla Bla Bla {% endblock %}
+{% block title %} Home {% endblock %}
+
+{% block content %}
+
+    {% for article in articles %}
+        <article class="post">
+            <div class="post-preview col-xs-10  no-gutter">
+                <h2><a href="{{ article.link|raw }}">{{ article.title }}</a></h2>
+
+                <p> {{ article.summary }}</p>
+
+                <p class="meta">
+                    <a href="{{ article.author.link|raw }}"> {{ article.author.name }}</a> in <a
+                            href="{{ article.category.link|raw }}">{{ article.category.name }}</a> <i
+                            class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ article.duration }} read
+                </p>
+            </div>
+
+            <div class=" col-xs-2  no-gutter">
+                <img src="{{ article.author.avatar }}" class="user-icon" alt="user-image">
+            </div>
+        </article>
+    {% else %}
+        <h2>No articles!</h2>
+    {% endfor %}
+
+{% endblock %}
