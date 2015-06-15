@@ -89,6 +89,11 @@
 
             <div class="home-page-posts animated fadeIn ">
 
+                <!--OUR CONTENT-->
+                <div class="box-body">
+                    <?= $this->section('content') ?>
+                </div>
+
                 <article class="post">
                     <div class="post-preview col-xs-10  no-gutter">
                         <h2><a href="post.html">A great story never told</a></h2>
@@ -276,7 +281,7 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
 <script src="js/vendor/jquery.jpanelmenu.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
+<script src="../../../public/bower_components/admin-lte/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/vendor/fastclick.min.js"></script>
 
 <script src="js/main.js"></script>
