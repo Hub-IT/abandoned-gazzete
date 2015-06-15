@@ -19,7 +19,7 @@ class WelcomeController extends BaseController {
 
 		$summary = 'summary';
 
-		$this->twig->display('welcome.twig');
+		$this->twig->display('consumer/welcome.twig');
 	}
 
 }
