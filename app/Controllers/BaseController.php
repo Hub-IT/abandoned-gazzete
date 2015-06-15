@@ -1,4 +1,5 @@
 <?php namespace Gazzete\Controllers;
+
 use Twig_Environment;
 use Twig_Loader_Filesystem;
 
@@ -7,10 +8,10 @@ use Twig_Loader_Filesystem;
  * @author Rizart Dokollari <r.dokollari@gmail.com>
  * @since 5/28/2015
  */
-
 class BaseController {
 
 	protected $loader;
+
 	protected $twig;
 
 	function __construct()
