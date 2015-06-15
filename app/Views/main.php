@@ -7,6 +7,7 @@
  */
 
 $this->layout('layouts/main') ?>
+<?php echo 'Here goes our content -future posts- <br> ' ?>
 <?php echo "name = " . $name . " and title = " . $title . "." ?>
 
 This is being echoed..
