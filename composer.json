@@ -1,0 +1,21 @@
+{
+	"require": {
+		"corneltek/pux": "~1.5",
+		"swiftmailer/swiftmailer": "^5.4",
+		"twig/twig": "^1.18"
+	},
+	"autoload": {
+		"psr-4": {
+			"Gazzete\\": "app/"
+		},
+		"files": ["app/helpers.php"]
+	},
+	"scripts": {
+		"post-install-cmd": [
+			"bower install"
+		],
+		"post-update-cmd": [
+			"bower install"
+		]
+	}
+}
