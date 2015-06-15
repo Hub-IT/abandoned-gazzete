@@ -15,9 +15,10 @@ class WelcomeController extends BaseController {
 	public function welcome()
 	{
 		$title = 'Gazzete | Home';
+
 		$summary = 'summary';
 
-		echo $this->templates->render('layouts/main', ['title' => $title], compact('title', 'summary'));
+		$this->twig->display('welcome.twig');
 	}
 
 }

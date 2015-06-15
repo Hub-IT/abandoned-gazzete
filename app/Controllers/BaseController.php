@@ -1,19 +1,22 @@
 <?php namespace Gazzete\Controllers;
+use Twig_Environment;
+use Twig_Loader_Filesystem;
+
 /**
  * @author Antony Kalogeropoulos <anthonykalogeropoulos@gmail.com>
  * @author Rizart Dokollari <r.dokollari@gmail.com>
  * @since 5/28/2015
  */
 
-use League\Plates\Engine;
-
 class BaseController {
 
-	protected $templates;
+	protected $loader;
+	protected $twig;
 
 	function __construct()
 	{
-		// Create new Plates instance
-		$this->templates = new Engine(__DIR__ . '/../Views');
+		$this->loader = new Twig_Loader_Filesystem(__DIR__ . '/../Views');
+
+		$this->twig = new Twig_Environment($this->loader);
 	}
 }

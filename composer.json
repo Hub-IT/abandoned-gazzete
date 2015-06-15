@@ -1,6 +1,5 @@
 {
 	"require": {
-		"corneltek/pux": "~1.5",
 		"swiftmailer/swiftmailer": "^5.4",
 		"twig/twig": "^1.18"
 	},

@@ -7,7 +7,6 @@ $mux = new Mux;
 
 $mux->get("/", ['Gazzete\Controllers\WelcomeController', 'welcome']);
 
-
 $route = $mux->dispatch($_SERVER['REQUEST_URI']);
 
 echo Executor::execute($route);
