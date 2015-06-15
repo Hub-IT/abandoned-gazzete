@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href=" ../../../public/bower_components/admin-lte/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -15,7 +15,7 @@
     <script src="/js/vendor/html5shiv.min.js"></script>
     <![endif]-->
 
-    <script src="js/vendor/modernizr.custom.32229-2.8-respondjs-1-4-2.js"></script>
+    <script src="js/modernizr.custom.32229-2.8-respondjs-1-4-2.js"></script>
 </head>
 <body>
 <main class="container left-container">
@@ -108,11 +108,11 @@
 </main> <!-- /container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 
-<script src="js/vendor/jquery.jpanelmenu.min.js"></script>
-<script src="../../../public/bower_components/admin-lte/bootstrap/js/bootstrap.min.js"></script>
-<script src="js/vendor/fastclick.min.js"></script>
+<script src="js/jquery.jpanelmenu.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fastclick.min.js"></script>
 
 <script src="js/main.js"></script>
 </body>
