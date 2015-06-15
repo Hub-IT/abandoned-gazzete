@@ -22,7 +22,10 @@ class WelcomeController extends BaseController
 
 	public function antonyFunction()
 	{
-		echo $this->templates->render('welcome', ['name' => $this->user->getName()]);
+		$title = 'Gazzete | Home';
+		$summary = 'summary';
+
+		echo $this->templates->render('welcome', compact('title', 'summary'));
 	}
 
 }
