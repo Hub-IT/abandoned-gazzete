@@ -3,27 +3,34 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
+    <div class="sub-nav">
+        <a href="#" class="select-posts active">Articles</a>
+        <a href="#" class="select-categories">Categories</a>
+    </div>
 
-    {% for article in articles %}
-        <article class="post">
-            <div class="post-preview col-xs-10  no-gutter">
-                <h2><a href="{{ article.link|raw }}">{{ article.title }}</a></h2>
+    <div class="home-page-posts animated fadeIn ">
 
-                <p> {{ article.summary }}</p>
+        {% for article in articles %}
+            <article class="post">
+                <div class="post-preview col-xs-10  no-gutter">
+                    <h2><a href="{{ article.link|raw }}">{{ article.title }}</a></h2>
 
-                <p class="meta">
-                    <a href="{{ article.author.link|raw }}"> {{ article.author.name }}</a> in <a
-                            href="{{ article.category.link|raw }}">{{ article.category.name }}</a> <i
-                            class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ article.duration }} read
-                </p>
-            </div>
+                    <p> {{ article.summary }}</p>
 
-            <div class=" col-xs-2  no-gutter">
-                <img src="{{ article.author.avatar }}" class="user-icon" alt="user-image">
-            </div>
-        </article>
-    {% else %}
-        <h2>No articles!</h2>
-    {% endfor %}
+                    <p class="meta">
+                        <a href="{{ article.author.link|raw }}"> {{ article.author.name }}</a> in <a
+                                href="{{ article.category.link|raw }}">{{ article.category.name }}</a> <i
+                                class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ article.duration }} read
+                    </p>
+                </div>
+
+                <div class=" col-xs-2  no-gutter">
+                    <img src="{{ article.author.avatar }}" class="user-icon" alt="user-image">
+                </div>
+            </article>
+        {% else %}
+            <h2>No articles!</h2>
+        {% endfor %}
+    </div>
 
 {% endblock %}

@@ -23,7 +23,7 @@ class Html {
 // TODO: write unit test
 	public function documentWriteScript($src)
 	{
-		echo "document.write('<script src='" . App::getBaseURL() . "$src'><\\/script>')";
+		echo "document.write(\"<script src='" . App::getBaseURL() . "$src'><\\/script>\")";
 	}
 
 // TODO: write unit test

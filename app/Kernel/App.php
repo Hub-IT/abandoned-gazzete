@@ -8,13 +8,23 @@
 
 class App {
 
+	private static $baseUrl;
+
 	public static function getBaseURL()
 	{
-		return sprintf(
-			"%s://%s%s",
-			isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-			$_SERVER['SERVER_NAME'],
-			$_SERVER['REQUEST_URI']
-		);
+		if ( ! isset(self::$baseUrl))
+		{
+			self::$baseUrl = sprintf("%s://%s%s",
+				isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
+				$_SERVER['SERVER_NAME'],
+				$_SERVER['REQUEST_URI']);
+		}
+
+		return self::$baseUrl;
+	}
+
+	public static function url($url)
+	{
+		return self::getBaseURL() . $url;
 	}
 }
