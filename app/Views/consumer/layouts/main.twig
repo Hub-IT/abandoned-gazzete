@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    {% block head %}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %} Default Title {% endblock %} - Gazzete</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        {{ html.link("css/bootstrap.min.css") }}
+        {{ html.link("css/font-awesome.min.css") }}
+        {{ html.link("css/main.css") }}
+
+        <!--[if lt IE 9]>
+        {{ html.script("js/vendor/html5shiv.min.js") }}
+        <![endif]-->
+
+        {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js") }}
+    {% endblock head %}
+</head>
+
+<body>
+<main class="container left-container">
+    <div class="row">
+
+        {% include 'consumer/layouts/_partials/menu.twig' %}
+
+        <section class="col-md-7 col-sm-12 col-md-offset-5 main-content">
+
+            <!-- contents per page -->
+            {% block content %}{% endblock content %}
+
+            <footer class="split-footer">
+                {% block footer %}
+                    <a href="post.html">About</a>
+                    <i class="link-spacer"></i>
+                    <a href="post.html">Writer 2015</a>
+                {% endblock footer %}
+            </footer>
+
+        </section>
+        <!-- main content -->
+
+    </div>
+    <!--/row -->
+
+</main>
+<!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || {{ html.documentWriteScript("js/jquery.min.js") }}</script>
+
+{{ html.script("js/jquery.jpanelmenu.min.js") }}
+{{ html.script("js/bootstrap.min.js") }}
+{{ html.script("js/fastclick.min.js") }}
+
+{{ html.script("js/main.js") }}
+</body>
+</html>

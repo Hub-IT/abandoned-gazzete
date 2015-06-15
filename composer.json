@@ -4,11 +4,14 @@
 		"swiftmailer/swiftmailer": "^5.4",
 		"twig/twig": "^1.18"
 	},
+	"require-dev": {
+		"fzaninotto/faker": "^1.5",
+		"codeception/codeception": "^2.0"
+	},
 	"autoload": {
 		"psr-4": {
 			"Gazzete\\": "app/"
-		},
-		"files": ["app/helpers.php"]
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
