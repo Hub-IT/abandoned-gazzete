@@ -17,7 +17,7 @@ class WelcomeController extends BaseController {
 		$title = 'Gazzete | Home';
 		$summary = 'summary';
 
-		echo $this->templates->render('main', ['title' => $title], compact('title', 'summary'));
+		echo $this->templates->render('layouts/main', ['title' => $title], compact('title', 'summary'));
 	}
 
 }
