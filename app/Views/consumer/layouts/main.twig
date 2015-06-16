@@ -8,15 +8,15 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        {{ html.link("css/bootstrap.min.css") }}
-        {{ html.link("css/font-awesome.min.css") }}
-        {{ html.link("css/main.css") }}
+        {{ html.link("css/bootstrap.min.css")|raw }}
+        {{ html.link("css/font-awesome.min.css")|raw }}
+        {{ html.link("css/main.css")|raw }}
 
         <!--[if lt IE 9]>
-        {{ html.script("js/vendor/html5shiv.min.js") }}
+        {{ html.script("js/vendor/html5shiv.min.js")|raw }}
         <![endif]-->
 
-        {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js") }}
+        {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js")|raw }}
     {% endblock head %}
 </head>
 
@@ -49,12 +49,12 @@
 <!-- /container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || {{ html.documentWriteScript("js/jquery.min.js") }}</script>
+<script>window.jQuery || {{ html.documentWriteScript("js/jquery.min.js")|raw }}</script>
 
-{{ html.script("js/jquery.jpanelmenu.min.js") }}
-{{ html.script("js/bootstrap.min.js") }}
-{{ html.script("js/fastclick.min.js") }}
+{{ html.script("js/jquery.jpanelmenu.min.js")|raw }}
+{{ html.script("js/bootstrap.min.js")|raw }}
+{{ html.script("js/fastclick.min.js")|raw }}
 
-{{ html.script("js/main.js") }}
+{{ html.script("js/main.js")|raw }}
 </body>
 </html>

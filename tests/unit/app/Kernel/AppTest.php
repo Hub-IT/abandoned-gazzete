@@ -1,5 +1,4 @@
-<?php
-namespace Kernel;
+<?php namespace app\Kernel;
 
 use Gazzete\Kernel\App;
 
@@ -9,10 +8,6 @@ class AppTest extends \PHPUnit_Framework_TestCase {
 
 	protected function setUp()
 	{
-		$_SERVER['REQUEST_URI'] = '';
-
-		$_SERVER['SERVER_NAME'] = 'app.io';
-
 	}
 
 	protected function tearDown()
@@ -45,6 +40,8 @@ class AppTest extends \PHPUnit_Framework_TestCase {
 
 	public function testReturnsUrlForPath()
 	{
+		$_SERVER['HTTPS'] = 'off';
+
 		$expectedUrl = 'http://' . $_SERVER['SERVER_NAME'] . '/expect';
 
 		$this->assertEquals($expectedUrl, App::url('expect'));
