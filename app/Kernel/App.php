@@ -1,9 +1,8 @@
 <?php namespace Gazzete\Kernel;
 /**
- * Created by PhpStorm.
- * User: Antony
- * Date: 6/15/2015
- * Time: 00:19
+ * @author Antony Kalogeropoulos <anthonykalogeropoulos@gmail.com>
+ * @author Rizart Dokollari <r.dokollari@gmail.com>
+ * @since 6/15/2015
  */
 
 class App {
@@ -14,10 +13,10 @@ class App {
 	{
 		if ( ! isset(self::$baseUrl))
 		{
-			self::$baseUrl = sprintf("%s://%s%s",
-				isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-				$_SERVER['SERVER_NAME'],
-				$_SERVER['REQUEST_URI']);
+			self::setBaseUrl(
+				sprintf("%s://%s%s", self::isSslEnabled() ? 'https' : 'http',
+					$_SERVER['SERVER_NAME'],
+					$_SERVER['REQUEST_URI']));
 		}
 
 		return self::$baseUrl;
@@ -25,6 +24,19 @@ class App {
 
 	public static function url($url)
 	{
-		return self::getBaseURL() . $url;
+		return self::getBaseURL() . "/$url";
+	}
+
+	public static function isSslEnabled()
+	{
+		return isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
+	}
+
+	/**
+	 * @param mixed $baseUrl
+	 */
+	public static function setBaseUrl($baseUrl)
+	{
+		self::$baseUrl = $baseUrl;
 	}
 }

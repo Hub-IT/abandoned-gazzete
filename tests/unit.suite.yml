@@ -4,3 +4,5 @@
 class_name: UnitTester
 modules:
     enabled: [Asserts, UnitHelper]
+settings:
+    colors: true
