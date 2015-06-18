@@ -22,5 +22,6 @@ class BaseController {
 		$this->twig = new Twig_Environment($this->loader);
 
 		$this->twig->addGlobal('html', new Html());
+		$this->twig->addGlobal('text', new Text());
 	}
 }
