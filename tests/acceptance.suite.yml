@@ -9,6 +9,13 @@ modules:
     enabled:
         - PhpBrowser
         - AcceptanceHelper
+        - Db
     config:
         PhpBrowser:
-            url: 'http://gazzete.io/'
+          url: 'http://gazzete.io/'
+        Db:
+          dsn: '[set pdo dsn here]'
+          user: '[set user]'
+          password: '[set password]'
+          dump: tests/_data/dump.sql
+
