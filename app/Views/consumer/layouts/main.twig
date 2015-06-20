@@ -8,12 +8,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
-        {{ html.link("css/bootstrap.min.css")|raw }}
-        {{ html.link("css/font-awesome.min.css")|raw }}
+        {{ html.link("bower_components/bootstrap/dist/css/bootstrap.min.css")|raw }}
+        {{ html.link("bower_components/fontawesome/css/font-awesome.min.css")|raw }}
         {{ html.link("css/main.css")|raw }}
 
         <!--[if lt IE 9]>
-        {{ html.script("js/vendor/html5shiv.min.js")|raw }}
+        {{ html.script("bower_components/html5shiv/dist/html5shiv.min.js")|raw }}
         <![endif]-->
 
         {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js")|raw }}
@@ -49,11 +49,11 @@
 <!-- /container -->
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script>window.jQuery || {{ html.documentWriteScript("js/jquery.min.js")|raw }}</script>
+<script>window.jQuery || {{ html.documentWriteScript("bower_components/jquery/dist/jquery.min.js")|raw }}</script>
 
-{{ html.script("js/jquery.jpanelmenu.min.js")|raw }}
-{{ html.script("js/bootstrap.min.js")|raw }}
-{{ html.script("js/fastclick.min.js")|raw }}
+{{ html.script("bower_components/jPanelMenu/jquery.jpanelmenu-legacy.js")|raw }}
+{{ html.script("bower_components/bootstrap/dist/js/bootstrap.min.js")|raw }}
+{{ html.script("bower_components/fastclick/lib/fastclick.js")|raw }}
 
 {{ html.script("js/main.js")|raw }}
 

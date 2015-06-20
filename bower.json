@@ -2,6 +2,11 @@
   "name": "Gazzete",
   "dependencies": {
     "admin-lte": "~2.1.1",
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "fastclick": "~1.0.6",
+    "fontawesome": "~4.3.0",
+    "html5shiv": "~3.7.2",
+    "jPanelMenu": "acolangelo/jPanelMenu#~1.4.1",
+    "jquery": "~2.1.4"
   }
 }
