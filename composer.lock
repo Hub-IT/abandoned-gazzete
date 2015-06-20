@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1c555149fa8c490d40a4341f3edad456",
+    "hash": "ab87eda1433de3bec8bd8dfa5b1e7aba",
     "packages": [
         {
             "name": "corneltek/pux",
