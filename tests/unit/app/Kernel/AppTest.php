@@ -2,49 +2,51 @@
 
 use Gazzete\Kernel\App;
 
-class AppTest extends \PHPUnit_Framework_TestCase {
+class AppTest extends \PHPUnit_Framework_TestCase
+{
 
-	protected $serverName;
+    protected $serverName;
 
-	protected function setUp()
-	{
-	}
+    protected function setUp()
+    {
+        $_SERVER['REQUEST_URI'] = 'random-uri';
+    }
 
-	protected function tearDown()
-	{
-		App::setBaseUrl(null);
-	}
+    protected function tearDown()
+    {
+        App::setBaseUrl(NULL);
+    }
 
-	// tests
-	public function testReturnsBaseUrlWithoutSsl()
-	{
-		$_SERVER['HTTPS'] = 'off';
+    // tests
+    public function testReturnsBaseUrlWithoutSsl()
+    {
+        $_SERVER['HTTPS'] = 'off';
 
-		$this->assertEquals('http://' . $_SERVER['SERVER_NAME'], App::getBaseURL());
-	}
+        $this->assertEquals('http://' . $_SERVER['SERVER_NAME'], App::getBaseURL());
+    }
 
-	// tests
-	public function testReturnsBaseUrlWithSsl()
-	{
-		$_SERVER['HTTPS'] = 'on';
+    // tests
+    public function testReturnsBaseUrlWithSsl()
+    {
+        $_SERVER['HTTPS'] = 'on';
 
-		$this->assertEquals('https://' . $_SERVER['SERVER_NAME'], App::getBaseURL());
-	}
+        $this->assertEquals('https://' . $_SERVER['SERVER_NAME'], App::getBaseURL());
+    }
 
-	public function testReturnsTrueWhenSllEnabled()
-	{
-		$_SERVER['HTTPS'] = 'on';
+    public function testReturnsTrueWhenSllEnabled()
+    {
+        $_SERVER['HTTPS'] = 'on';
 
-		$this->assertTrue(App::isSslEnabled());
-	}
+        $this->assertTrue(App::isSslEnabled());
+    }
 
-	public function testReturnsUrlForPath()
-	{
-		$_SERVER['HTTPS'] = 'off';
+    public function testReturnsUrlForPath()
+    {
+        $_SERVER['HTTPS'] = 'off';
 
-		$expectedUrl = 'http://' . $_SERVER['SERVER_NAME'] . '/expect';
+        $expectedUrl = 'http://' . $_SERVER['SERVER_NAME'] . '/expect';
 
-		$this->assertEquals($expectedUrl, App::url('expect'));
-	}
+        $this->assertEquals($expectedUrl, App::url('expect'));
+    }
 
 }
