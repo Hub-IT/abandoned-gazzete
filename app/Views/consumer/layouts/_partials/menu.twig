@@ -1,50 +1,16 @@
-<div id="menu-target">
-    <ul>
-        <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-        <li><i class="fa fa-user"></i><a href="author.html">Contributors</a></li>
-        <li><i class="fa fa-image"></i>{{ html.anchor("about", "About")|raw }}</li>
-        <li><i class="fa fa-paper-plane"></i><a href="contact.html">Contact</a></li>
-    </ul>
-    <hr>
-    <ul>
-        <li><i class="fa fa-file"></i><a href="post.html">Articles</a></li>
-        {#<li><i class="fa fa-file"></i><a href="post-sidebar.html">Post with Sidebar</a></li>#}
-        {#<li><i class="fa fa-home"></i><a href="alt-home.html">Alternate Home</a></li>#}
-        <li><i class="fa fa-image"></i>{{ html.anchor("article-relative-link", "Categories")|raw }}</li>
-        <li><i class="fa fa-image"></i><a href="tag.html">Tags</a></li>
-        {#The favourites page will be displayed only to those logged In#}
-        <li><i class="fa fa-star"></i><a href="favorites.html">Favorites</a></li>
-    </ul>
-</div>
+
+{% include 'consumer/layouts/_partials/nav.twig' %}
 
 <section class="sidebar col-md-5 col-sm-12"
-         {% block hero %}style="background-image: url({{ html.url('img/default-sidebar.jpg') }} {% endblock hero %})">
 
-                    <span class="menu-trigger animated fadeInDown" id="menu-trigger-btn">
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                        <span class="bar"></span>
-                    </span>
+    {% block hero %}style="background-image: url({{ html.url('img/default-sidebar.jpg') }} {% endblock hero %})">
 
-    <!-- if the user has javascript disabled they can still use the menu -->
-    <noscript>
-        <div class="no-js-menu">
-            <ul>
-                <li><i class="fa fa-home"></i><a href="index.html">Home</a></li>
-                <li><i class="fa fa-user"></i><a href="author.html">Contributors</a></li>
-                <li><i class="fa fa-anchor"></i><a href="page.html">About</a></li>
-                <li><i class="fa fa-paper-plane"></i><a href="contact.html">Contact</a></li>
-                <li><i class="fa fa-file"></i><a href="post.html">Post Page</a></li>
-                {#<li><i class="fa fa-file"></i><a href="post-sidebar.html">Post with Sidebar</a></li>#}
-                {#<li><i class="fa fa-home"></i><a href="alt-home.html">Alternate Home</a></li>#}
-                <li><i class="fa fa-image"></i><a href="category.html">Categories</a></li>
-                <li><i class="fa fa-image"></i><a href="tag.html">Tags</a></li>
-                {#The favourites page will be displayed only to those logged In#}
-                <li><i class="fa fa-star"></i><a href="favorites.html">Favorites</a></li>
-            </ul>
-        </div>
-    </noscript>
-    <!-- end no script -->
+        <span class="menu-trigger animated fadeInDown" id="menu-trigger-btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </span>
+
 
     <div class="site-info">
         <div class="primary-info">
