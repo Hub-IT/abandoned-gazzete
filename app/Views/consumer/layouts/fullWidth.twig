@@ -19,26 +19,30 @@
         {{ html.script("js/modernizr.custom.32229-2.8-respondjs-1-4-2.js")|raw }}
     {% endblock head %}
 </head>
-
 <body>
-<main class="container left-container">
+<header class="hero-image" role="banner"
+        style="background-image: url(img/default-about.jpg);">
+    {#{% block hero %}style="background-image: url({{ html.url('img/default-about.jpg') }} {% endblock hero %})">#}
+
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    {% include 'consumer/layouts/_partials/hamburger.twig' %}
+
+</header>
+
+<main class="container">
     <div class="row">
-
-        {% include 'consumer/layouts/_partials/menu.twig' %}
-
-        <section class="col-md-7 col-sm-12 col-md-offset-5 main-content">
-
+        <div class="col-xs-12 single-content">
             <!-- contents per page -->
             {% block content %}{% endblock content %}
 
             {% include 'consumer/layouts/_partials/footer.twig' %}
-
-        </section>
-        <!-- main content -->
-
+        </div>
     </div>
-    <!--/row -->
-
 </main>
 <!-- /container -->
 

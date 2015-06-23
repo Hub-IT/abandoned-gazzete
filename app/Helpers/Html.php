@@ -24,13 +24,8 @@ class Html
         return "document.write(\"<script src='" . App::getBaseURL() . "/$src'><\\/script>\")";
     }
 
-    public function url($url)
-    {
-        return App::getBaseURL() . "/$url";
-    }
-
     public function anchor($href, $text, $id = NULL, $class = NULL)
     {
-        return "<a href='$href' class='$class' id='$id' >$text</a>";
+        return "<a href='" . App::url($href) . "' class='$class' id='$id' >$text</a>";
     }
 }

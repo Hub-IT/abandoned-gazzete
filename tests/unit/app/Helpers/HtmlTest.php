@@ -16,7 +16,7 @@ class HtmlTest extends \PHPUnit_Framework_TestCase
         $this->html = new Html();
 
         $this->faker = Factory::create();
-	}
+    }
 
     protected function tearDown()
     {
@@ -49,23 +49,18 @@ class HtmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $this->html->documentWriteScript('asset.js'));
     }
 
-    public function testReturnsCorrectUrl()
+    public function testReturnsCorrectAnchor()
     {
-        $expected = App::getBaseURL() . "/url";
-
-        $this->assertEquals($expected, $this->html->url('url'));
-    }
-
-    public function testReturnsCorrectWithARelativeAnchor()
-    {
-        $href = App::getBaseURL() . "/url";
+        $relativeUrl = $this->faker->word;
+        $href = App::url($relativeUrl);
         $text = $this->faker->paragraph;
-        $class = $this->faker->optional(0.5, null)->word();
-        $id = $this->faker->optional(0.5, null)->word();
+        $class = $this->faker->optional(0.5, NULL)->word();
+        $id = $this->faker->optional(0.5, NULL)->word();
 
         $expected = "<a href='$href' class='$class' id='$id' >$text</a>";
 
-        $this->assertEquals($expected, $this->html->anchor($href, $text, $id, $class));
+        $this->assertEquals($expected, $this->html->anchor($relativeUrl, $text, $id, $class));
     }
+
 
 }
