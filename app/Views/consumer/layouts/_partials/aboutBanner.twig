@@ -1,0 +1,14 @@
+<header class="hero-image" role="banner"
+      style="background-image: url(img/default-about.jpg);">
+{#{% block hero %}style="background-image: url({{ html.url('img/default-about.jpg') }} {% endblock hero %})">#}
+
+    <span class="menu-trigger animated fadeInDown">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </span>
+
+    {% include 'consumer/layouts/_partials/nav.twig' %}
+
+</header>
+
