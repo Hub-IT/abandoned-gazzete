@@ -1,5 +1,6 @@
 <?php namespace Gazzete\Controllers;
 
+use Faker\Factory;
 use Gazzete\Helpers\Html;
 use Gazzete\Helpers\Text;
 use Twig_Environment;
@@ -10,22 +11,23 @@ use Twig_Loader_Filesystem;
  * @author Rizart Dokollari <r.dokollari@gmail.com>
  * @since 5/28/2015
  */
-class BaseController {
+class BaseController
+{
 
-	protected $loader;
+    protected $loader;
 
-	protected $twig;
+    protected $twig;
 
-	function __construct()
-	{
-		$this->loader = new Twig_Loader_Filesystem(__DIR__ . '/../Views');
+    function __construct()
+    {
+        $this->loader = new Twig_Loader_Filesystem(__DIR__ . '/../Views');
 
-		$this->twig = new Twig_Environment($this->loader);
+        $this->twig = new Twig_Environment($this->loader);
 
-		$this->twig->addGlobal('html', new Html());
+        $this->twig->addGlobal('html', new Html());
 
-		$this->twig->addGlobal('text', new Text());
-	}
+        $this->twig->addGlobal('faker', Factory::create());
+    }
 }
 
 
