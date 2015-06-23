@@ -40,13 +40,4 @@ class AppTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue(App::isSslEnabled());
     }
 
-    public function testReturnsUrlForPath()
-    {
-        $_SERVER['HTTPS'] = 'off';
-
-        $expectedUrl = 'http://' . $_SERVER['SERVER_NAME'] . '/expect';
-
-        $this->assertEquals($expectedUrl, App::url('expect'));
-    }
-
 }

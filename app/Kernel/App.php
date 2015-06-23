@@ -22,11 +22,6 @@ class App
         return self::$baseUrl;
     }
 
-    public static function url($url)
-    {
-        return self::getBaseURL() . "/$url";
-    }
-
     public static function isSslEnabled()
     {
         return isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';

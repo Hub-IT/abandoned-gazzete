@@ -52,7 +52,7 @@ class HtmlTest extends \PHPUnit_Framework_TestCase
     public function testReturnsCorrectAnchor()
     {
         $relativeUrl = $this->faker->word;
-        $href = App::url($relativeUrl);
+        $href = $this->html->url($relativeUrl);
         $text = $this->faker->paragraph;
         $class = $this->faker->optional(0.5, NULL)->word();
         $id = $this->faker->optional(0.5, NULL)->word();
@@ -62,5 +62,13 @@ class HtmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($expected, $this->html->anchor($relativeUrl, $text, $id, $class));
     }
 
+    public function testReturnsUrlForPath()
+    {
+        $_SERVER['HTTPS'] = 'off';
+
+        $expectedUrl = 'http://' . $_SERVER['SERVER_NAME'] . '/expect';
+
+        $this->assertEquals($expectedUrl, $this->html->url('expect'));
+    }
 
 }

@@ -26,6 +26,18 @@ class Html
 
     public function anchor($href, $text, $id = NULL, $class = NULL)
     {
-        return "<a href='" . App::url($href) . "' class='$class' id='$id' >$text</a>";
+        return "<a href='" . $this->url($href) . "' class='$class' id='$id' >$text</a>";
+    }
+
+
+    /**
+     * Generates a fully qualified URL to the given path
+     *
+     * @param $url
+     * @return string
+     */
+    public static function url($url)
+    {
+        return App::getBaseURL() . "/$url";
     }
 }
