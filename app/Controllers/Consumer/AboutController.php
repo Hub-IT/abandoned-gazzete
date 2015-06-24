@@ -20,9 +20,10 @@ class AboutController extends BaseController
     public function about()
     {
         $faker = Factory::create();
+
         $title = implode(" ", $faker->words());
         $subtitle = implode(" ", $faker->words());
-        $paragraphs = $faker->paragraphs();
+        $paragraphs = $faker->paragraphs(5);
 
         $this->twig->display('consumer/about.twig', compact('title', 'subtitle', 'paragraphs'));
     }

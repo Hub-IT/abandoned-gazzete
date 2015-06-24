@@ -26,7 +26,6 @@ class BaseController
 
         $this->twig->addGlobal('html', new Html());
 
-        $this->twig->addGlobal('faker', Factory::create());
     }
 }
 
