@@ -1,25 +1,25 @@
 {
-	"require": {
-		"corneltek/pux": "~1.5",
-		"swiftmailer/swiftmailer": "^5.4",
-		"twig/twig": "^1.18"
-	},
-	"require-dev": {
-		"fzaninotto/faker": "^1.5",
-		"codeception/codeception": "^2.0",
-		"phpunit/phpunit": "^4.6"
-	},
-	"autoload": {
-		"psr-4": {
-			"Gazzete\\": "app/"
-		}
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"bower install"
-		],
-		"post-update-cmd": [
-			"bower install"
-		]
-	}
+  "require": {
+    "corneltek/pux": "~1.5",
+    "swiftmailer/swiftmailer": "^5.4",
+    "twig/twig": "^1.18",
+    "fzaninotto/faker": "^1.5"
+  },
+  "require-dev": {
+    "codeception/codeception": "^2.0",
+    "phpunit/phpunit": "^4.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gazzete\\": "app/"
+    }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "bower install"
+    ],
+    "post-update-cmd": [
+      "bower install"
+    ]
+  }
 }
