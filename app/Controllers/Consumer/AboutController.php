@@ -2,6 +2,7 @@
 
 use Faker\Factory;
 use Gazzete\Controllers\BaseController;
+use Gazzete\Helpers\Html;
 
 /**
  * Created by PhpStorm.
@@ -9,22 +10,26 @@ use Gazzete\Controllers\BaseController;
  * Date: 6/20/2015
  * Time: 21:51
  */
-class AboutController extends BaseController
-{
+class AboutController extends BaseController {
 
-    public function __construct()
-    {
-        parent::__construct();
-    }
+	private $html;
 
-    public function about()
-    {
-        $faker = Factory::create();
-        $title = implode(" ", $faker->words());
-        $subtitle = implode(" ", $faker->words());
-        $paragraphs = $faker->paragraphs();
+	public function __construct()
+	{
+		parent::__construct();
 
-        $this->twig->display('consumer/about.twig', compact('title', 'subtitle', 'paragraphs'));
-    }
+		$this->html = new Html();
+	}
+
+	public function about()
+	{
+		$faker = Factory::create();
+		$title = implode(" ", $faker->words());
+		$subtitle = implode(" ", $faker->words());
+		$paragraphs = $faker->paragraphs();
+		$sidebarImgUrl = $this->html->url('img/default-about.jpg');
+
+		$this->twig->display('consumer/about.twig', compact('title', 'subtitle', 'paragraphs', 'sidebarImgUrl'));
+	}
 
 }

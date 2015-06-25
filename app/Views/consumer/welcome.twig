@@ -3,6 +3,7 @@
 {% block title %} Home {% endblock %}
 
 {% block content %}
+
     <div class="sub-nav">
         <a href="#" class="select-posts active">Articles</a>
         <a href="#" class="select-categories">Categories</a>
@@ -20,7 +21,8 @@
                     <p class="meta">
                         <a href="{{ article.author.link|raw }}"> {{ article.author.name }}</a> in <a
                                 href="{{ article.category.link|raw }}">{{ article.category.name }}</a> <i
-                                class="link-spacer"></i> <i class="fa fa-bookmark"></i> {{ article.duration }} read
+                                class="link-spacer"></i> <i
+                                class="fa fa-bookmark"></i> {{ article.duration }} read
                     </p>
                 </div>
 
@@ -32,5 +34,6 @@
             <h2>No articles!</h2>
         {% endfor %}
     </div>
+    {% include 'consumer/layouts/_partials/footer.twig' %}
 
 {% endblock content %}
