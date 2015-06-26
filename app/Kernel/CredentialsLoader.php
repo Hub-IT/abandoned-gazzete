@@ -59,9 +59,9 @@ class CredentialsLoader {
 	 */
 	public function getDbUsername()
 	{
-		self::load();
+		$this->load();
 
-		return self::$settings['DB_USERNAME'];
+		return $this->credentials['DB_USERNAME'];
 	}
 
 	/**
@@ -69,9 +69,9 @@ class CredentialsLoader {
 	 */
 	public function getDbPassword()
 	{
-		self::load();
+		$this->load();
 
-		return self::$settings['DB_PASSWORD'];
+		return $this->credentials['DB_PASSWORD'];
 	}
 
 	/**
@@ -79,9 +79,9 @@ class CredentialsLoader {
 	 */
 	public function getDbPort()
 	{
-		self::load();
+		$this->load();
 
-		return self::$settings['DB_PORT'];
+		return $this->credentials['DB_PORT'];
 	}
 
 	/**
