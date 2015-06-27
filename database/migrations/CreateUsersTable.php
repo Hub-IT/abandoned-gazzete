@@ -29,25 +29,18 @@ class CreateUsersTable extends Migration {
 				"UNIQUE INDEX `" . self::$columnPrimaryKey . "_UNIQUE` (`" . self::$columnPrimaryKey . "` ASC)," .
 				"UNIQUE INDEX `" . self::$columnEmail . "_UNIQUE` (`" . self::$columnEmail . "` ASC)," .
 				"INDEX `" . self::$columnForeignRoleId . "_idx` (`" . self::$columnForeignRoleId . "` ASC)," .
-				"CONSTRAINT `" . self::$columnForeignRoleId . "` " .
+				"CONSTRAINT `FK_" . self::$columnForeignRoleId . "` " .
 				"   FOREIGN KEY (`" . self::$columnForeignRoleId . "`) " .
 				"   REFERENCES `" . $this->credentialsLoader->getDbName() . "`.`" . CreateRolesTable::$tableName . "` (`" . CreateRolesTable::$columnPrimaryKey . "`) " .
 				"   ON DELETE RESTRICT" .
 				"   ON UPDATE CASCADE); ")
 			->execute();
 
-		echo "Create articles table complete.\n";
+		echo "Create " . self::$tableName . " table complete.\n";
 	}
 
-	/**
-	 * Reverse the migrations
-	 */
-	public function down()
+	protected function getTableName()
 	{
-		$this->db->getConnection()
-			->prepare("DROP TABLE IF EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . self::$tableName . "`")
-			->execute();
-
-		echo "Destroy users table complete.\n";
+		return self::$tableName;
 	}
 }

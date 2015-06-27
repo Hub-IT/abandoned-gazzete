@@ -26,18 +26,11 @@ class CreateRolesTable extends Migration {
 				"UNIQUE INDEX `" . self::$columnName . "_UNIQUE` (`" . self::$columnName . "` ASC));")
 			->execute();
 
-		echo "Create articles table complete.\n";
+		echo "Create " . self::$tableName . " table complete.\n";
 	}
 
-	/**
-	 * Reverse the migrations
-	 */
-	public function down()
+	protected function getTableName()
 	{
-		$this->db->getConnection()
-			->prepare("DROP TABLE IF EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . self::$tableName . "`")
-			->execute();
-
-		echo "Destroy roles table complete.\n";
+		return self::$tableName;
 	}
 }

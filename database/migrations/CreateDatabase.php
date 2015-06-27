@@ -4,12 +4,13 @@
  * @author  Rizart Dokollari
  * @version 6/26/2015
  */
-class CreateDatabase extends Migration {
+class CreateDatabase {
 
 
 	public function __construct()
 	{
 		$this->createRolesTable = new CreateRolesTable();
+		$this->createUsersTable = new CreateUsersTable();
 		$this->createArticlesTable = new CreateArticlesTable();
 	}
 
@@ -19,6 +20,7 @@ class CreateDatabase extends Migration {
 	public function up()
 	{
 		$this->createRolesTable->up();
+		$this->createUsersTable->up();
 		$this->createArticlesTable->up();
 
 		echo "Database migration creation complete.\n";
@@ -30,6 +32,7 @@ class CreateDatabase extends Migration {
 	public function down()
 	{
 		$this->createArticlesTable->down();
+		$this->createUsersTable->down();
 		$this->createRolesTable->down();
 
 		echo "Database migration destroy complete.\n";
