@@ -1,7 +1,8 @@
 <?php namespace database\seeds;
 
 use Faker\Factory;
-use Gazzete\Kernel\Databases\MySqlDatabase;
+use Gazzete\Models\Repositories\Database;
+use Gazzete\Models\Repositories\MySqlDatabase;
 
 /**
  * @author  Rizart Dokollari

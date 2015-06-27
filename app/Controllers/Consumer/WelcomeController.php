@@ -1,6 +1,8 @@
 <?php namespace Gazzete\Controllers\Consumer;
 
 use Gazzete\Controllers\BaseController;
+use Gazzete\Models\Repositories\Categories\Db\MySqlDbCategoryRepository;
+use Gazzete\Models\Repositories\Categories\DbCategoryRepository;
 
 /**
  * @author Antony Kalogeropoulos <anthonykalogeropoulos@gmail.com>
@@ -12,6 +14,8 @@ class WelcomeController extends BaseController {
 	public function __construct()
 	{
 		parent::__construct();
+
+		$this->categoriesReporitory = new DbCategoryRepository(new MySqlDbCategoryRepository());
 	}
 
 	public function welcome()
@@ -28,8 +32,9 @@ class WelcomeController extends BaseController {
 			               'link' => 'http://bigthink.com/#articles-nav-dropdown-65',
 			               'name' => 'Technology']];
 
+		$categories = $this->categoriesReporitory->getAll();
 
-		$this->twig->display('consumer/welcome.twig', compact('articles'));
+		$this->twig->display('consumer/welcome.twig', compact('articles', 'categories'));
 	}
 
 }

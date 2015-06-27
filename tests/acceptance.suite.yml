@@ -14,9 +14,9 @@ modules:
         PhpBrowser:
           url: 'http://gazzete.io/'
         Db:
-          dsn: 'mysql:host=localhost;dbname=testdb'
-          user: 'root'
-          password: ''
+          dsn: 'mysql:host=localhost;dbname=gazzete_db'
+          user: 'homestead'
+          password: 'secret'
           dump: 'tests/_data/dump.sql'
           populate: true
           cleanup: true

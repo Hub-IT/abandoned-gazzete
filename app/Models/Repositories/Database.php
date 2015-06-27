@@ -1,11 +1,11 @@
-<?php namespace Gazzete\Kernel\Databases;
+<?php namespace Gazzete\Models\Repositories;
+
 use Gazzete\Kernel\CredentialsLoader;
 
 /**
  * @author  Rizart Dokollari
  * @version 6/27/2015
  */
-
 abstract class Database {
 
 	public $credentialsLoader;

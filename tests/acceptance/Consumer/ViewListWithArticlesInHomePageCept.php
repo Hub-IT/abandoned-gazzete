@@ -10,12 +10,12 @@ foreach (range(1, 10) as $index) {
 
     $articles[] = $article;
 
-    $I->haveInDatabase('articles', $article);
+//    $I->haveInDatabase('articles', $article);
 }
 
-foreach($articles as $article){
-    $I->seeInDatabase('articles', $article);
-}
+//foreach($articles as $article){
+//    $I->seeInDatabase('articles', $article);
+//}
 
 $I->wantTo('confirm that all articles are shown in the Home Page under the Articles tab.');
 
@@ -30,9 +30,9 @@ $I->seeElement(['css' => 'a'], ['class' => 'select-posts active']);
 
 //For each article
 
-foreach($articles as $article){
-   $I->see($article['title']);
-}
+//foreach($articles as $article){
+//   $I->see($article['title']);
+//}
 //I see title of the article
 //I see author of the article
 //I see summary of the article

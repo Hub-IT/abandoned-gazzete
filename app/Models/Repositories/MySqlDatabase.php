@@ -1,4 +1,4 @@
-<?php namespace Gazzete\Kernel\Databases;
+<?php namespace Gazzete\Models\Repositories;
 
 use PDO;
 

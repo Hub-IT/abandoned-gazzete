@@ -1,7 +1,7 @@
 <?php namespace database\migrations;
+use Gazzete\Models\Repositories\Database;
+use Gazzete\Models\Repositories\MySqlDatabase;
 
-use Gazzete\Kernel\Databases\Database;
-use Gazzete\Kernel\Databases\MySqlDatabase;
 
 /**
  * @author  Rizart Dokollari

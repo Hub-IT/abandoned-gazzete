@@ -6,7 +6,7 @@
 
     <div class="sub-nav">
         <a href="#" class="select-posts active">Articles</a>
-        <a href="#" class="select-categories">Categories</a>
+        <a href="#" id="categories-tab" class="select-categories">Categories</a>
     </div>
 
     <div class="home-page-posts animated fadeIn ">
@@ -33,6 +33,23 @@
         {% else %}
             <h2>No articles!</h2>
         {% endfor %}
+    </div>
+
+    <div class="home-page-categories animated fadeIn hide">
+        <div class="category row">
+            <section>
+
+                {% for category in categories %}
+                    <div class="category-preview col-xs-6 col-sm-4 ">
+                        <h2>{{ category.getName }}</h2>
+                        <a href="category.html"><img src="{{ category.getExtImg }}" alt="category-image"></a>
+                    </div>
+                {% else %}
+                    <h2>No categories!</h2>
+                {% endfor %}
+
+            </section>
+        </div>
     </div>
     {% include 'consumer/layouts/_partials/footer.twig' %}
 
