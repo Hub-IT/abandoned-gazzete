@@ -1,22 +1,14 @@
 <?php namespace Gazzete\Kernel\Databases;
 
-use Gazzete\Kernel\CredentialsLoader;
 use PDO;
 
 /**
  * @author  Rizart Dokollari
  * @version 6/26/2015
  */
-class MySqlDatabase implements Database {
+class MySqlDatabase extends Database {
 
 	private $connection;
-
-	private $credentialsLoader;
-
-	public function __construct( CredentialsLoader $credentialsLoader = null )
-	{
-		$this->credentialsLoader = is_null($credentialsLoader) ? (new CredentialsLoader()) : $credentialsLoader;
-	}
 
 	private function createNewConnection()
 	{

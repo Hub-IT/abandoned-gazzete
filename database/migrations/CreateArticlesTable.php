@@ -19,7 +19,7 @@ class CreateArticlesTable extends Migration {
 	{
 		$this->db->getConnection()
 			->prepare(
-				"CREATE TABLE IF NOT EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
+				"CREATE TABLE IF NOT EXISTS `" . $this->db->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
 				"`" . self::$columnPrimaryKey . "` INT NOT NULL AUTO_INCREMENT," .
 				"`" . self::$columnRegistrarId . "` INT NOT NULL," .
 				"`" . self::$columnAuthorId . "` INT NULL," .
@@ -35,12 +35,12 @@ class CreateArticlesTable extends Migration {
 				"INDEX `" . self::$columnAuthorId . "_id_idx` ( `" . self::$columnAuthorId . "` ASC)," .
 				"CONSTRAINT `FK_" . self::$columnRegistrarId . "`" .
 				"   FOREIGN KEY (`" . self::$columnRegistrarId . "`) " .
-				"   REFERENCES `" . $this->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "` (`" . CreateUsersTable::$columnPrimaryKey . "`) " .
+				"   REFERENCES `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "` (`" . CreateUsersTable::$columnPrimaryKey . "`) " .
 				"   ON DELETE RESTRICT" .
 				"   ON UPDATE CASCADE," .
 				"CONSTRAINT `FK_" . self::$columnAuthorId . "`" .
 				"   FOREIGN KEY (`" . self::$columnAuthorId . "`) " .
-				"   REFERENCES `" . $this->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "` (`" . CreateUsersTable::$columnPrimaryKey . "`) " .
+				"   REFERENCES `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "` (`" . CreateUsersTable::$columnPrimaryKey . "`) " .
 				"   ON DELETE RESTRICT" .
 				"   ON UPDATE CASCADE)")
 			->execute();

@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration {
 	{
 		$this->db->getConnection()
 			->prepare(
-				"CREATE TABLE IF NOT EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
+				"CREATE TABLE IF NOT EXISTS `" . $this->db->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
 				"`" . self::$columnPrimaryKey . "` INT NOT NULL AUTO_INCREMENT," .
 				"`" . self::$columnName . "` VARCHAR(90) NOT NULL," .
 				"`" . self::$columnEmail . "` VARCHAR(90) NOT NULL," .
@@ -31,7 +31,7 @@ class CreateUsersTable extends Migration {
 				"INDEX `" . self::$columnForeignRoleId . "_idx` (`" . self::$columnForeignRoleId . "` ASC)," .
 				"CONSTRAINT `FK_" . self::$columnForeignRoleId . "` " .
 				"   FOREIGN KEY (`" . self::$columnForeignRoleId . "`) " .
-				"   REFERENCES `" . $this->credentialsLoader->getDbName() . "`.`" . CreateRolesTable::$tableName . "` (`" . CreateRolesTable::$columnPrimaryKey . "`) " .
+				"   REFERENCES `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateRolesTable::$tableName . "` (`" . CreateRolesTable::$columnPrimaryKey . "`) " .
 				"   ON DELETE RESTRICT" .
 				"   ON UPDATE CASCADE); ")
 			->execute();

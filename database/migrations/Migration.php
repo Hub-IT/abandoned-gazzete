@@ -1,6 +1,7 @@
 <?php namespace database\migrations;
+
+use Gazzete\Kernel\Databases\Database;
 use Gazzete\Kernel\Databases\MySqlDatabase;
-use Gazzete\Kernel\CredentialsLoader;
 
 /**
  * @author  Rizart Dokollari
@@ -9,16 +10,13 @@ use Gazzete\Kernel\CredentialsLoader;
 abstract class Migration {
 
 	protected $db;
-	protected $credentialsLoader;
 
 	protected static $columnCreatedAt = "created_at";
 	protected static $columnUpdatedAt = "updated_at";
 
-	public function __construct()
+	public function __construct( Database $db = null )
 	{
-		$this->db = new MySqlDatabase();
-
-		$this->credentialsLoader = new CredentialsLoader();
+		$this->db = is_null($db) ? (new MySqlDatabase()) : $db;
 	}
 
 	protected abstract function getTableName();
@@ -35,7 +33,7 @@ abstract class Migration {
 	public function down()
 	{
 		$this->db->getConnection()
-			->prepare("DROP TABLE IF EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . $this->getTableName() . "`")
+			->prepare("DROP TABLE IF EXISTS `" . $this->db->credentialsLoader->getDbName() . "`.`" . $this->getTableName() . "`")
 			->execute();
 
 		echo "Destroy " . $this->getTableName() . " table complete.\n";

@@ -18,7 +18,7 @@ class CreateRolesTable extends Migration {
 	{
 		$this->db->getConnection()
 			->prepare(
-				"CREATE TABLE IF NOT EXISTS `" . $this->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
+				"CREATE TABLE IF NOT EXISTS `" . $this->db->credentialsLoader->getDbName() . "`.`" . self::$tableName . "` (" .
 				"`" . self::$columnPrimaryKey . "` INT NOT NULL AUTO_INCREMENT," .
 				"`" . self::$columnName . "` VARCHAR(45) NOT NULL," .
 				"PRIMARY KEY (`" . self::$columnPrimaryKey . "`)," .
