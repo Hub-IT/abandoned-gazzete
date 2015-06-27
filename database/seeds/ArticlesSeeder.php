@@ -33,16 +33,15 @@ class ArticlesSeeder extends Seeder {
 			$authorName = $this->faker->name;
 			$durationRead = $this->faker->numberBetween(0, 999);
 			$createdAt = $this->faker->dateTime()->format(Migration::$columnCreatedAtFormat);
-			$updatedAt = $this->faker->dateTime()->format(Migration::$columnUpdatAtFormat);
+			$updatedAt = $this->faker->dateTime()->format(Migration::$columnUpdateAtFormat);
 
 			$query =
-				"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateArticlesTable::$tableName .
-				"` (`" . CreateArticlesTable::$columnRegistrarId . "`, `" . CreateArticlesTable::$columnAuthorId . "`," .
+				"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateArticlesTable::$tableName ."` ".
+				"(`" . CreateArticlesTable::$columnRegistrarId . "`, `" . CreateArticlesTable::$columnAuthorId . "`," .
 				"`" . CreateArticlesTable::$columnTitle . "`, `" . CreateArticlesTable::$columnContent . "`," .
 				"`" . CreateArticlesTable::$columnAuthorName . "`, `" . CreateArticlesTable::$columnDurationRead . "`, " .
 				"`" . Migration::$columnCreatedAt . "`, `" . Migration::$columnUpdatedAt . "`) " .
-				"VALUES ('$registrarId', '$authorId', '$title', '$content', '$authorName', '$durationRead', '$createdAt',
-				 '$updatedAt')";
+				"VALUES ('$registrarId', '$authorId', '$title', '$content', '$authorName', '$durationRead', '$createdAt', '$updatedAt')";
 
 			$this->db->getConnection()->query($query);
 		}

@@ -9,3 +9,4 @@ require __DIR__ . '/../../../vendor/autoload.php';
 
 $database = new CreateDatabase();
 
+$database->down();

@@ -24,10 +24,10 @@ class UsersSeeder extends Seeder {
 			$roleId = $this->faker->randomElement($roleIds);
 
 			$query =
-				"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "`" .
-				" (`" . CreateUsersTable::$columnName . "`, `" . CreateUsersTable::$columnEmail . "`," .
+				"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "` " .
+				"(`" . CreateUsersTable::$columnName . "`, `" . CreateUsersTable::$columnEmail . "`," .
 				"`" . CreateUsersTable::$columnForeignRoleId . "`) " .
-				"VALUES ('$name', '$email', '$roleId');";
+				"VALUES ('$name', '$email', '$roleId')";
 
 			$this->db->getConnection()->query($query);
 

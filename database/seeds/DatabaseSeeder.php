@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder {
 		$this->rolesSeeder = new RolesSeeder();
 		$this->usersSeeder = new UsersSeeder();
 		$this->articlesSeeder = new ArticlesSeeder();
+		$this->categoriesSeeder = new CategoriesSeeder();
+		$this->articleCategorySeeder = new ArticleCategorySeeder();
 	}
 
 	public function run()
@@ -22,5 +24,7 @@ class DatabaseSeeder extends Seeder {
 		$this->rolesSeeder->run();
 		$this->usersSeeder->run();
 		$this->articlesSeeder->run();
+		$this->categoriesSeeder->run();
+		$this->articleCategorySeeder->run();
 	}
 }

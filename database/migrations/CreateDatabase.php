@@ -7,11 +7,16 @@
 class CreateDatabase {
 
 
+	/**
+	 *
+	 */
 	public function __construct()
 	{
 		$this->createRolesTable = new CreateRolesTable();
 		$this->createUsersTable = new CreateUsersTable();
 		$this->createArticlesTable = new CreateArticlesTable();
+		$this->createCategoriesTable = new CreateCategoriesTable();
+		$this->createArticleCategoryTable = new CreateArticleCategoryTable();
 	}
 
 	/**
@@ -22,6 +27,8 @@ class CreateDatabase {
 		$this->createRolesTable->up();
 		$this->createUsersTable->up();
 		$this->createArticlesTable->up();
+		$this->createCategoriesTable->up();
+		$this->createArticleCategoryTable->up();
 
 		echo "Database migration creation complete.\n";
 	}
@@ -31,9 +38,11 @@ class CreateDatabase {
 	 */
 	public function down()
 	{
+		$this->createArticleCategoryTable->down();
 		$this->createArticlesTable->down();
 		$this->createUsersTable->down();
 		$this->createRolesTable->down();
+		$this->createCategoriesTable->down();
 
 		echo "Database migration destroy complete.\n";
 	}

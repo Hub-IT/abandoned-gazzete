@@ -14,7 +14,7 @@ abstract class Migration {
 	public static $columnCreatedAt = "created_at";
 	public static $columnCreatedAtFormat = "Y-m-d H:i:s";
 	public static $columnUpdatedAt = "updated_at";
-	public static $columnUpdatAtFormat = "Y-m-d H:i:s";
+	public static $columnUpdateAtFormat = "Y-m-d H:i:s";
 
 	public function __construct( Database $db = null )
 	{
@@ -34,6 +34,9 @@ abstract class Migration {
 	 */
 	public function down()
 	{
+		$this->db->getConnection()
+			->prepare("TRUNCATE TABLE `" . $this->db->credentialsLoader->getDbName() . "`.`" . $this->getTableName() . "`");
+
 		$this->db->getConnection()
 			->prepare("DROP TABLE IF EXISTS `" . $this->db->credentialsLoader->getDbName() . "`.`" . $this->getTableName() . "`")
 			->execute();
