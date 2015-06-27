@@ -74,4 +74,15 @@ class CredentialsLoaderTest extends \PHPUnit_Framework_TestCase {
 
 		$this->assertEquals($expected, $this->credentialsLoader->getDbPort());
 	}
+
+	public function test_it_returns_correct_pdo_error_mode()
+	{
+		$expected = 'db_error_mode';
+
+		$this->asset->shouldReceive('fetch')->once()->andReturn(['PDO_ERROR_MODE' => $expected]);
+
+		$this->credentialsLoader = new CredentialsLoader($this->asset);
+
+		$this->assertEquals($expected, $this->credentialsLoader->getDbPdoErrorMode());
+	}
 }
