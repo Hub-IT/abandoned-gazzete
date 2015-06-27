@@ -19,14 +19,17 @@ class UsersSeeder extends Seeder {
 
 		foreach (range(0, 13) as $index)
 		{
-			$this->db->getConnection()
-				->prepare(
-					"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName .
-					"` (`" . CreateUsersTable::$columnName . "`, `" . CreateUsersTable::$columnEmail . "`,
-					 `" . CreateUsersTable::$columnForeignRoleId . "`) " .
-					"VALUES ('" . $this->faker->name() . "', '" . $this->faker->email() . "',
-					'" . $this->faker->randomElement($roleIds) . "')")
-				->execute();
+			$name = $this->faker->name();
+			$email = $this->faker->unique()->email();
+			$roleId = $this->faker->randomElement($roleIds);
+
+			$query =
+				"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateUsersTable::$tableName . "`" .
+				" (`" . CreateUsersTable::$columnName . "`, `" . CreateUsersTable::$columnEmail . "`," .
+				"`" . CreateUsersTable::$columnForeignRoleId . "`) " .
+				"VALUES ('$name', '$email', '$roleId');";
+
+			$this->db->getConnection()->query($query);
 
 		}
 

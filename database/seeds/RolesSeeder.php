@@ -15,7 +15,7 @@ class RolesSeeder extends Seeder {
 			$this->db->getConnection()
 				->prepare(
 					"INSERT INTO `" . $this->db->credentialsLoader->getDbName() . "`.`" . CreateRolesTable::$tableName .
-					"` (`" . CreateRolesTable::$columnName . "`) VALUES ('" . $this->faker->word() . "')")
+					"` (`" . CreateRolesTable::$columnName . "`) VALUES ('" . $this->faker->unique()->word() . "')")
 				->execute();
 
 		}

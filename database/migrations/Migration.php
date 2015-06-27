@@ -11,8 +11,10 @@ abstract class Migration {
 
 	protected $db;
 
-	protected static $columnCreatedAt = "created_at";
-	protected static $columnUpdatedAt = "updated_at";
+	public static $columnCreatedAt = "created_at";
+	public static $columnCreatedAtFormat = "Y-m-d H:i:s";
+	public static $columnUpdatedAt = "updated_at";
+	public static $columnUpdatAtFormat = "Y-m-d H:i:s";
 
 	public function __construct( Database $db = null )
 	{

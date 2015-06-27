@@ -14,11 +14,13 @@ class DatabaseSeeder extends Seeder {
 
 		$this->rolesSeeder = new RolesSeeder();
 		$this->usersSeeder = new UsersSeeder();
+		$this->articlesSeeder = new ArticlesSeeder();
 	}
 
 	public function run()
 	{
 		$this->rolesSeeder->run();
 		$this->usersSeeder->run();
+//		$this->articlesSeeder->run();
 	}
 }
