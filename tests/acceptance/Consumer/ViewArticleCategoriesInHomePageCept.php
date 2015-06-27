@@ -24,5 +24,8 @@ $I->dontSeeElement(['css' => 'a'], ['class' => 'select-categories active']);
 
 $I->click('#categories-tab');
 
-
+foreach ($categories as $category)
+{
+	$I->see($category['name']);
+}
 
