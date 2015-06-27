@@ -19,7 +19,7 @@ class RolesSeeder extends Seeder {
 				->execute();
 
 		}
-		
+
 		echo "Seed for '" . CreateRolesTable::$tableName . "' table complete.\n";
 	}
 }

@@ -13,10 +13,12 @@ class DatabaseSeeder extends Seeder {
 		parent::__construct();
 
 		$this->rolesSeeder = new RolesSeeder();
+		$this->usersSeeder = new UsersSeeder();
 	}
 
 	public function run()
 	{
 		$this->rolesSeeder->run();
+		$this->usersSeeder->run();
 	}
 }
