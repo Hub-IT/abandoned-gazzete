@@ -36,7 +36,7 @@ class Html
      * @param $url
      * @return string
      */
-    public static function url($url)
+    public function url($url)
     {
         return App::getBaseURL() . "/$url";
     }

@@ -1,9 +1,5 @@
 <?php namespace Gazzete\Controllers\Consumer;
 
-use Faker\Factory;
-use Gazzete\Controllers\BaseController;
-use Gazzete\Helpers\Html;
-
 /**
  * Created by PhpStorm.
  * User: Antony
@@ -26,10 +22,9 @@ class AboutController extends BaseController {
 		$faker = Factory::create();
 		$title = implode(" ", $faker->words());
 		$subtitle = implode(" ", $faker->words());
-		$paragraphs = $faker->paragraphs();
+		$paragraphs = $faker->paragraphs(5);
 		$sidebarImgUrl = $this->html->url('img/default-about.jpg');
 
 		$this->twig->display('consumer/about.twig', compact('title', 'subtitle', 'paragraphs', 'sidebarImgUrl'));
 	}
-
 }

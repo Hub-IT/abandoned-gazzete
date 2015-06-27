@@ -2,8 +2,6 @@
 $I = new AcceptanceTester($scenario);
 $faker = Faker\Factory::create();
 
-$articles = $I->haveInDatabase('articles', ['title' => $faker->words]);
-
 $I->wantTo('view the home page contents');
 
 $I->amOnPage('/');
