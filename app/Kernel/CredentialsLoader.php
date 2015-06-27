@@ -89,8 +89,8 @@ class CredentialsLoader {
 	 */
 	public function getDbPdoErrorMode()
 	{
-		self::load();
+		$this->load();
 
-		return self::$settings['PDO_ERROR_MODE'];
+		return $this->credentials['PDO_ERROR_MODE'];
 	}
 }
