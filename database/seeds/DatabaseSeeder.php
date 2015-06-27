@@ -21,6 +21,6 @@ class DatabaseSeeder extends Seeder {
 	{
 		$this->rolesSeeder->run();
 		$this->usersSeeder->run();
-//		$this->articlesSeeder->run();
+		$this->articlesSeeder->run();
 	}
 }

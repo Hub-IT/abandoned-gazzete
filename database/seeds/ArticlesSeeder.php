@@ -29,7 +29,7 @@ class ArticlesSeeder extends Seeder {
 			$title = ucwords(implode(" ", $this->faker->words()));
 			$registrarId = $this->faker->randomElement($userIds);
 			$authorId = $this->faker->randomElement($userIds);
-			$content = "<p>" . implode("</p><p>", $this->faker->paragraphs()) . "</p>";
+			$content = "<p>" . implode("</p><p>", $this->faker->paragraphs(1)) . "</p>";
 			$authorName = $this->faker->name;
 			$durationRead = $this->faker->numberBetween(0, 999);
 			$createdAt = $this->faker->dateTime()->format(Migration::$columnCreatedAtFormat);
@@ -41,12 +41,10 @@ class ArticlesSeeder extends Seeder {
 				"`" . CreateArticlesTable::$columnTitle . "`, `" . CreateArticlesTable::$columnContent . "`," .
 				"`" . CreateArticlesTable::$columnAuthorName . "`, `" . CreateArticlesTable::$columnDurationRead . "`, " .
 				"`" . Migration::$columnCreatedAt . "`, `" . Migration::$columnUpdatedAt . "`) " .
-				"VALUES ('$registrarId', '$authorId', '$title', '$content', '$authorName', '$durationRead', $createdAt, $updatedAt)";
+				"VALUES ('$registrarId', '$authorId', '$title', '$content', '$authorName', '$durationRead', '$createdAt',
+				 '$updatedAt')";
 
-//			var_dump($query);
-//			exit;
-			$this->db->getConnection()->query($query)->execute();
-
+			$this->db->getConnection()->query($query);
 		}
 
 		echo "Seed for '" . CreateArticlesTable::$tableName . "' table complete.\n";
