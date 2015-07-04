@@ -9,8 +9,8 @@ $categories = [
 foreach ($categories as $category)
 {
 	$I->haveInDatabase('categories', $category);
+	$I->seeInDatabase('categories', $category);
 }
-
 
 $I->wantTo('view the categories in the home page');
 
@@ -22,7 +22,9 @@ $I->see('Categories');
 
 $I->dontSeeElement(['css' => 'a'], ['class' => 'select-categories active']);
 
-$I->click('#categories-tab');
+$I->click('Categories', '#categories-tab');
+
+//$I->seeElement(['css' => 'a'], ['class' => 'select-categories active']);
 
 foreach ($categories as $category)
 {
