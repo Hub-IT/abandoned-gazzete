@@ -1,6 +1,7 @@
 <?php namespace Gazzete\Models\Repositories\Categories\Db;
 
 use database\migrations\CreateCategoriesTable;
+use Exception;
 use Gazzete\Models\Repositories\MySqlDatabase;
 use PDO;
 
@@ -8,7 +9,8 @@ use PDO;
  * @author  Rizart Dokollari
  * @version 6/27/2015
  */
-class MySqlDbCategoryRepository extends MySqlDatabase implements RawDbCategoryRepository {
+class MySqlDbCategoryRepository extends MySqlDatabase implements RawDbCategoryRepository
+{
 
 	public function getAll()
 	{

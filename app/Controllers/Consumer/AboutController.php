@@ -1,15 +1,30 @@
-<?php namespace Gazzete\Controllers\Consumer;
+<?php
 
 /**
- * Created by PhpStorm.
- * User: Antony
- * Date: 6/20/2015
- * Time: 21:51
+ * @author Rizart Dokolalri <r.dokollari@gmail.com>
+ * @since 8/8/2015
  */
-class AboutController extends BaseController {
+namespace Gazzete\Controllers\Consumer;
 
+use Faker\Factory;
+use Gazzete\Controllers\BaseController;
+use Gazzete\Helpers\Html;
+
+/**
+ * Class AboutController
+ * @package Gazzete\Controllers\Consumer
+ */
+class AboutController extends BaseController
+{
+
+	/**
+	 * @var Html
+	 */
 	private $html;
 
+	/**
+	 *
+	 */
 	public function __construct()
 	{
 		parent::__construct();
@@ -17,6 +32,9 @@ class AboutController extends BaseController {
 		$this->html = new Html();
 	}
 
+	/**
+	 *
+	 */
 	public function about()
 	{
 		$faker = Factory::create();

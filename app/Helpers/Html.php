@@ -11,17 +11,17 @@ class Html
 
     public function link($url, $rel = 'stylesheet', $type = 'text/css')
     {
-        return "<link href='" . App::getBaseURL() . "/$url' rel='$rel' type='$type' />";
+        return "<link href='" . App::getBaseURL() . "$url' rel='$rel' type='$type' />";
     }
 
     public function script($src)
     {
-        return "<script src='" . App::getBaseURL() . "/$src'></script>";
+        return "<script src='" . App::getBaseURL() . "$src'></script>";
     }
 
     public function documentWriteScript($src)
     {
-        return "document.write(\"<script src='" . App::getBaseURL() . "/$src'><\\/script>\")";
+        return "document.write(\"<script src='" . App::getBaseURL() . "$src'><\\/script>\")";
     }
 
     public function anchor($href, $text, $id = NULL, $class = NULL)
@@ -38,6 +38,6 @@ class Html
      */
     public function url($url)
     {
-        return App::getBaseURL() . "/$url";
+        return App::getBaseURL() . "$url";
     }
 }

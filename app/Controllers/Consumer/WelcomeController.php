@@ -9,7 +9,8 @@ use Gazzete\Models\Repositories\Categories\DbCategoryRepository;
  * @author Rizart Dokollari <r.dokollari@gmail.com>
  * @since 5/20/2015
  */
-class WelcomeController extends BaseController {
+class WelcomeController extends BaseController
+{
 
 	public function __construct()
 	{

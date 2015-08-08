@@ -8,30 +8,31 @@
 class App
 {
 
-    private static $baseUrl;
+	private static $baseUrl;
 
-    public static function getBaseURL()
-    {
-        if ( ! isset(self::$baseUrl)) {
+	public static function getBaseURL()
+	{
+		if ( ! isset(self::$baseUrl) )
+		{
 
-            $protocol = self::isSslEnabled() ? 'https' : 'http';
+			$protocol = self::isSslEnabled() ? 'https' : 'http';
 
-            self::setBaseUrl("$protocol://" . $_SERVER['SERVER_NAME']);
-        }
+			self::setBaseUrl("$protocol://" . $_SERVER['SERVER_NAME'] . getenv('BASE_URL'));
+		}
 
-        return self::$baseUrl;
-    }
+		return self::$baseUrl;
+	}
 
-    public static function isSslEnabled()
-    {
-        return isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
-    }
+	/**
+	 * @param mixed $baseUrl
+	 */
+	public static function setBaseUrl($baseUrl)
+	{
+		self::$baseUrl = $baseUrl;
+	}
 
-    /**
-     * @param mixed $baseUrl
-     */
-    public static function setBaseUrl($baseUrl)
-    {
-        self::$baseUrl = $baseUrl;
-    }
+	public static function isSslEnabled()
+	{
+		return isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off';
+	}
 }

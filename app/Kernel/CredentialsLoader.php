@@ -6,40 +6,17 @@ use Gazzete\Helpers\Asset;
  * @author  Rizart Dokollari
  * @version 6/26/2015
  */
-class CredentialsLoader {
+class CredentialsLoader
+{
 
 	private $credentials;
-
-	private $asset;
-
-	public function __construct( Asset $asset = null, $credentialsFilePath = null )
-	{
-		$this->asset = is_null($asset) ? (new Asset()) : $asset;
-
-		$this->load($credentialsFilePath);
-	}
-
-	/**
-	 * Load App credentials (database, email & ReCaptcha credentials etc...)
-	 * @param null $credentialsFilePath
-	 */
-	private function load( $credentialsFilePath = null )
-	{
-		if ( ! isset( $this->credentials ) ) # Load only if not already done so
-		{
-			$credentialsFilePath = is_null($credentialsFilePath) ? __DIR__ . '/../../.env.php' : $credentialsFilePath;
-
-			$this->credentials = $this->asset->fetch($credentialsFilePath);
-		}
-
-	}
 
 	/**
 	 * @return mixed
 	 */
 	public function getDbHost()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['DB_HOST']) ) $this->credentials['DB_HOST'] = getenv('DB_HOST');
 
 		return $this->credentials['DB_HOST'];
 	}
@@ -49,7 +26,7 @@ class CredentialsLoader {
 	 */
 	public function getDbName()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['DB_NAME']) ) $this->credentials['DB_NAME'] = getenv('DB_NAME');
 
 		return $this->credentials['DB_NAME'];
 	}
@@ -59,7 +36,7 @@ class CredentialsLoader {
 	 */
 	public function getDbUsername()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['DB_USERNAME']) ) $this->credentials['DB_USERNAME'] = getenv('DB_USERNAME');
 
 		return $this->credentials['DB_USERNAME'];
 	}
@@ -69,7 +46,7 @@ class CredentialsLoader {
 	 */
 	public function getDbPassword()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['DB_PASSWORD']) ) $this->credentials['DB_PASSWORD'] = getenv('DB_PASSWORD');
 
 		return $this->credentials['DB_PASSWORD'];
 	}
@@ -79,7 +56,7 @@ class CredentialsLoader {
 	 */
 	public function getDbPort()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['DB_PORT']) ) $this->credentials['DB_PORT'] = getenv('DB_PORT');
 
 		return $this->credentials['DB_PORT'];
 	}
@@ -89,7 +66,7 @@ class CredentialsLoader {
 	 */
 	public function getDbPdoErrorMode()
 	{
-		$this->load();
+		if ( ! isset ($this->credentials['PDO_ERROR_MODE']) ) $this->credentials['PDO_ERROR_MODE'] = getenv('PDO_ERROR_MODE');
 
 		return $this->credentials['PDO_ERROR_MODE'];
 	}

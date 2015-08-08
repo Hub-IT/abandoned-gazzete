@@ -3,7 +3,8 @@
 		"corneltek/pux": "~1.5",
 		"swiftmailer/swiftmailer": "^5.4",
 		"twig/twig": "^1.18",
-		"fzaninotto/faker": "^1.5"
+		"fzaninotto/faker": "^1.5",
+		"vlucas/phpdotenv": "^2.0"
 	},
 	"require-dev": {
 		"codeception/codeception": "^2.0",
